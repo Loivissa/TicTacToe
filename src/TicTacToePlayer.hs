@@ -47,15 +47,15 @@ sensiblyDecideHowToMove f board =
   then (makeAMove board f (fromJust(findColumnWithOneWindow f board)) )
   else (if((findRowWithOneWindow f board) /= Nothing) -- ...or in a row
            then (makeAMove board f (fromJust(findRowWithOneWindow f board)) )
-		   else (if(findDiagonalWithOneWindow f board /= Nothing) --or on a diagonal
-		            then (makeAMove board f (fromJust(findDiagonalWithOneWindow f board)))
-					else (if((findColumnWithOneWindow (otherPlayersField f) board) /= Nothing) --check if you can block your opponent's 3 in the row
-		                     then (makeAMove board f (fromJust(findColumnWithOneWindow (otherPlayersField f) board)))
-							 else (if((findRowWithOneWindow (otherPlayersField f) board) /= Nothing)
-					                  then (makeAMove board f (fromJust(findRowWithOneWindow (otherPlayersField f) board)))
-							          else (if(findDiagonalWithOneWindow (otherPlayersField f) board /= Nothing)
-									           then(makeAMove board f (fromJust(findDiagonalWithOneWindow (otherPlayersField f) board)))
-											   else(makeAMove board f (firstEmptyPlace board))))))) --no chance to win for you or your opponent this round, place your mark wherever
+           else (if(findDiagonalWithOneWindow f board /= Nothing) --or on a diagonal
+                    then (makeAMove board f (fromJust(findDiagonalWithOneWindow f board)))
+                    else (if((findColumnWithOneWindow (otherPlayersField f) board) /= Nothing) --check if you can block your opponent's 3 in the row
+                             then (makeAMove board f (fromJust(findColumnWithOneWindow (otherPlayersField f) board)))
+                             else (if((findRowWithOneWindow (otherPlayersField f) board) /= Nothing)
+                                      then (makeAMove board f (fromJust(findRowWithOneWindow (otherPlayersField f) board)))
+                                      else (if(findDiagonalWithOneWindow (otherPlayersField f) board /= Nothing)
+                                               then(makeAMove board f (fromJust(findDiagonalWithOneWindow (otherPlayersField f) board)))
+                                               else(makeAMove board f (firstEmptyPlace board))))))) --no chance to win for you or your opponent this round, place your mark wherever
  where
  loopingChecker :: (Field -> Board -> Int -> Maybe (Int,Int)) -> Field -> Board -> Int -> Maybe(Int,Int)
  loopingChecker _ _ _ 3 = Nothing
@@ -63,10 +63,10 @@ sensiblyDecideHowToMove f board =
  findDiagonalWithOneWindow :: Field -> Board -> Maybe (Int,Int)
  findDiagonalWithOneWindow f b = 
     if(maybeChecker(checkOnList f ((b!(0,0)):(b!(1,1)):(b!(2,2)):[]))) 
-	  then (Just (fromJust(checkOnList f ((b!(0,0)):(b!(1,1)):(b!(2,2)):[])), fromJust(checkOnList f ((b!(0,0)):(b!(1,1)):(b!(2,2)):[]))))
-	  else (if maybeChecker(checkOnList f ((b!(0,2)):(b!(1,1)):(b!(2,0)):[]))
-	            then (Just (fromJust(checkOnList f ((b!(0,2)):(b!(1,1)):(b!(2,0)):[])),translateDiagonalIndex(fromJust(checkOnList f ((b!(0,2)):(b!(1,1)):(b!(2,0)):[])))))
-				else Nothing)
+      then (Just (fromJust(checkOnList f ((b!(0,0)):(b!(1,1)):(b!(2,2)):[])), fromJust(checkOnList f ((b!(0,0)):(b!(1,1)):(b!(2,2)):[]))))
+      else (if maybeChecker(checkOnList f ((b!(0,2)):(b!(1,1)):(b!(2,0)):[]))
+                then (Just (fromJust(checkOnList f ((b!(0,2)):(b!(1,1)):(b!(2,0)):[])),translateDiagonalIndex(fromJust(checkOnList f ((b!(0,2)):(b!(1,1)):(b!(2,0)):[])))))
+                else Nothing)
    where
    translateDiagonalIndex :: Int -> Int
    translateDiagonalIndex 0 = 2
@@ -80,7 +80,7 @@ sensiblyDecideHowToMove f board =
   checkColumn f board cIndex = 
     if(maybeChecker (checkColumnOnList f board cIndex))
       then (Just (oneDimIndexToTwoDim(3*fromJust(checkColumnOnList f board cIndex) + cIndex)))
-	  else Nothing
+      else Nothing
    where
    checkColumnOnList :: Field -> Board -> Int -> Maybe Int
    checkColumnOnList f b cIndex = checkOnList f ((b!(0,cIndex)):(b!(1,cIndex)):(b!(2,cIndex)):[])
@@ -91,7 +91,7 @@ sensiblyDecideHowToMove f board =
   checkRow f board rIndex = 
     if(maybeChecker (checkRowOnList f board rIndex)) 
       then (Just (oneDimIndexToTwoDim(fromJust(checkRowOnList f board rIndex) + 3*rIndex)))
-	  else Nothing
+      else Nothing
    where
    checkRowOnList :: Field -> Board -> Int -> Maybe Int
    checkRowOnList f b rIndex = checkOnList f ((b!(rIndex,0)):(b!(rIndex,1)):(b!(rIndex,2)):[])
