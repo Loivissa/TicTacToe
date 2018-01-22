@@ -1,2 +1,3 @@
 # projekt
 "# TicTacToe" 
+AD + KP
