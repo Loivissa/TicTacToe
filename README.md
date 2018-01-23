@@ -1,4 +1,4 @@
-# projekt
+# Projekt
 "# TicTacToe"
 
 Player + Engine by AD 
