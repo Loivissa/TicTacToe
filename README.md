@@ -1,3 +1,4 @@
 # projekt
 "# TicTacToe" 
-AD + KP
+Player + Engine by AD
+Board + Game by KP
