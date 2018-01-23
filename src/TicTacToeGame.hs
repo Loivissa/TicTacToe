@@ -4,6 +4,7 @@ import TicTacToePlayer
 import Data.Array
 import TicTacToeBoard
 
+playAGame :: IO()
 playAGame = do
  putStrLn "Welcome!"
  putStrLn "easy or hard mode?"
@@ -25,10 +26,9 @@ playAGame = do
 
 
 gameLoop :: Int -> Field -> Int -> Board -> IO()
---gameLoop _ _ _ Nothing = do
--- putStrLn "The game has ended"
 gameLoop 1 f1 mod1 board11 = do
  putStrLn "Where?"
+ putStrLn ("You are playing as " ++ (convertFieldToString f1))
  putStrLn help
  coordinates <-getLine
  let place = (read coordinates :: Int)
