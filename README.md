@@ -1,4 +1,6 @@
 # projekt
-"# TicTacToe" \n
-Player + Engine by AD \n
+"# TicTacToe"
+
+Player + Engine by AD 
+
 Board + Game by KP
