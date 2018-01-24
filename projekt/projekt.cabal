@@ -1,0 +1,68 @@
+-- This file has been generated from package.yaml by hpack version 0.20.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: f2ac5740bf692a30f44f3642a4dc85dd6acd32e9934e379d0fac02683cc97842
+
+name:           projekt
+version:        0.1.0.0
+description:    Please see the README on Github at <https://github.com/githubuser/projekt#readme>
+homepage:       https://github.com/githubuser/projekt#readme
+bug-reports:    https://github.com/githubuser/projekt/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2018 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+
+extra-source-files:
+    ChangeLog.md
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/projekt
+
+library
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , array
+  exposed-modules:
+      Lib
+      TicTacToeEngine
+      TicTacToePlayer
+      TicTacToeBoard
+      TicTacToeGame
+  other-modules:
+      Paths_projekt
+  default-language: Haskell2010
+
+executable projekt-exe
+  main-is: Main.hs
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , projekt
+    , array
+  other-modules:
+      Paths_projekt
+  default-language: Haskell2010
+
+test-suite projekt-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , projekt
+  other-modules:
+      Paths_projekt
+  default-language: Haskell2010
