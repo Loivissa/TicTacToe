@@ -1,24 +1,28 @@
-module TicTacToePlayer(sensiblyDecideHowToMove, lazilyDecideHowToMove, oneDimIndexToTwoDim) where
+module TicTacToePlayer(sensiblyDecideHowToMove, lazilyDecideHowToMove, oneDimIndexToTwoDim, otherPlayersField) where
 import TicTacToeEngine
 import Data.Maybe
 import Data.Array
 
-
+-- | @isGameFinished@ checks if game is finished. (See @seeGameStatus@)
 isGameFinished :: Board -> Bool
 isGameFinished board = ((seeGameStatus board) /= InProgress)
 
+-- | @oneDimIndexToTwoDim@ converts number of field into two dimensional index.
 oneDimIndexToTwoDim :: Int -> (Int,Int)
 oneDimIndexToTwoDim index = ( (index `div` 3), (index `mod` 3) )
 
+-- | @otherPlayersField@ returns next type of sign for the next player. Next for @Cross@ is @Circle@ and vice versa.
 otherPlayersField :: Field -> Field
 otherPlayersField Cross = Circle
 otherPlayersField Circle = Cross
 otherPlayersField _ = Empty
 
+-- | @maybeChecker@ checks if the argument exists (is not @Nothing@)
 maybeChecker :: Maybe a -> Bool
 maybeChecker Nothing = False
 maybeChecker _ = True
 
+-- | @checkOnList@ interprets list of fields and returns number of @Empty@ field in row. (@See @Field@)
 checkOnList :: Field -> [Field] -> Maybe Int
 checkOnList Cross (Empty:Cross:Cross:[]) = Just 0
 checkOnList Cross (Cross:Empty:Cross:[]) = Just 1
@@ -28,7 +32,7 @@ checkOnList Circle (Circle:Empty:Circle:[]) = Just 1
 checkOnList Circle (Circle:Circle:Empty:[]) = Just 2
 checkOnList _ _ = Nothing
 
-
+-- | @firstEmptyPlace@ searches for first @Empty@ place in the @Board@
 firstEmptyPlace :: Board -> (Int,Int)
 firstEmptyPlace board = oneDimIndexToTwoDim (oneDimIndex board) 
  where
@@ -37,7 +41,7 @@ firstEmptyPlace board = oneDimIndexToTwoDim (oneDimIndex board)
  loop (a:at) acc = if (a==Empty) then acc else loop at (acc+1)
  oneDimIndex board = loop (elems board) 0
 
-  -- | @lazilyDecideHowToMove@ takes a @Board@ and a @Field@ representing whether it is a @Cross@ or a @Circle@ move. It returns a new @Board@ after making a first possible move - either as a @Just Board@ or @Nothing@ if there is no possible move.
+ -- | @lazilyDecideHowToMove@ takes a @Board@ and a @Field@ representing whether it is a @Cross@ or a @Circle@ move. It returns a new @Board@ after making a first possible move - either as a @Just Board@ or @Nothing@ if there is no possible move.
 lazilyDecideHowToMove :: Field -> Board -> Maybe Board
 lazilyDecideHowToMove f board = makeAMove board f (firstEmptyPlace board)
 

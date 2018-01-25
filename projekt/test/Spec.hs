@@ -10,4 +10,4 @@ main = do
 
 sayYoTest :: TestTree
 sayYoTest = testCase "Testing playGame"
-  (assertEqual "Should say Yo to Friend!" "X" (convertFieldToString Cross))
+  (assertEqual "Cross should be X!" "X" (convertFieldToString Cross))

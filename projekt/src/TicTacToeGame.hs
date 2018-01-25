@@ -4,7 +4,7 @@ import TicTacToePlayer
 import Data.Array
 import TicTacToeBoard
 
-
+--|
 playAGame :: IO()
 playAGame = do
  putStrLn "Welcome!"
@@ -53,7 +53,7 @@ gameLoop 1 f1 mod1 board11 = do
                         else if(seeGameStatus board3 == Stalemate)
                              then putStrLn "Stalemate!"
                              else do
-                              gameLoop 0 (next f1) mod1 board3
+                              gameLoop 0 (otherPlayersField f1) mod1 board3
 gameLoop 0 f2 mod2 board12 = do
  let board2 = if(mod2==0) then (lazilyDecideHowToMove f2 board12) else (sensiblyDecideHowToMove f2 board12)
  let board3 = eliminate (board2)
@@ -74,7 +74,7 @@ gameLoop 0 f2 mod2 board12 = do
                            else if (board2==Nothing)
                                 then putStr "Stalemate!"
                                 else do
-                                     gameLoop 1 (next f2) mod2 board3
+                                     gameLoop 1 (otherPlayersField f2) mod2 board3
 
 
 
