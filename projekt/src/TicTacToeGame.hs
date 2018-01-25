@@ -5,6 +5,8 @@ import Data.Array
 import TicTacToeBoard
 import Text.Read
 
+
+-- | @playAGame@ starts a game based on players decisions (who starts, hard or easy mode)
 playAGame :: IO()
 playAGame = do
  putStrLn "Welcome!"
@@ -18,14 +20,24 @@ playAGame = do
         then gameLoop 1 Cross 0 board -- Player move easy
             else if(mode=="hard")
              then gameLoop 1 Cross 1 board -- Player move hard
-             else playAGame
+             else do
+                    putStrLn "Mode must be either 'hard' or 'easy'."
+                    playAGame
   else  if(mode=="easy" && answer == "N")
         then gameLoop 0 Cross 0 board -- Computer move easy
              else if(mode=="hard" && answer == "N")
                   then gameLoop 0 Cross 1 board -- Computer move hard
-                  else playAGame
+                  else if(mode=="easy" || mode == "hard")
+                         then do 
+                         putStrLn "Must be 'Y' or 'N'."
+                         playAGame
+                         else do
+                         putStrLn "Mode must be either 'hard' or 'easy'."
+                         playAGame
 
 
+
+  -- | @gameLoop@ handles game between player and computer. First instance interprets players intentions. Second makes moves as computer.
 gameLoop :: Int -> Field -> Int -> Board -> IO()
 gameLoop 1 f1 mod1 board11 = do
  putStrLn "Where?"
@@ -35,8 +47,9 @@ gameLoop 1 f1 mod1 board11 = do
  let place = readMaybe coordinates :: Maybe Int 
  if (place == Nothing)
     then do 
-	     putStrLn "Must be a number."
-	     gameLoop 1 f1 mod1 board11
+         putStrLn (boardToString board11)
+         putStrLn "Must be a number."
+         gameLoop 1 f1 mod1 board11
     else do
     let board2 = (makeAMove board11 f1 (oneDimIndexToTwoDim (eliminate2 place)))
     let board3 = eliminate (board2)
@@ -59,7 +72,7 @@ gameLoop 1 f1 mod1 board11 = do
                                      then putStrLn "Stalemate!"
                                      else do
                                      gameLoop 0 (otherPlayersField f1) mod1 board3
-									 
+
 gameLoop 0 f2 mod2 board12 = do
  let board2 = if(mod2==0) then (lazilyDecideHowToMove f2 board12) else (sensiblyDecideHowToMove f2 board12)
  let board3 = eliminate (board2)

@@ -1,13 +1,19 @@
-module Main where
+module Main (main) where
 import Test.HUnit
 import TicTacToeEngine
 import TicTacToePlayer
 import TicTacToeBoard
+import System.Exit
 
 main :: IO ()
 main = do
-  defaultMain (testGroup "TictacToe Tests" [Test])
+    counts <- runTestTT (test [
+            convertingCrossTest
+            ])
+    if (errors counts + failures counts == 0)
+        then exitSuccess
+        else exitFailure
 
-sayYoTest :: TestTree
-sayYoTest = testCase "Testing playGame"
-  (assertEqual "Cross should be X!" "X" (convertFieldToString Cross))
+
+convertingCrossTest :: Test
+convertingCrossTest = TestCase  $ assertEqual "Cross should be X!" "X" (convertFieldToString Cross)
