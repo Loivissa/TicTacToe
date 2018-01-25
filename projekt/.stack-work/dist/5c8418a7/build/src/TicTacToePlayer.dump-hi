@@ -1,0 +1,173 @@
+
+==================== FINAL INTERFACE ====================
+2018-01-25 23:15:39.1984949 UTC
+
+interface projekt-0.1.0.0-224PrvOZtnxCf3bB64O2Ck:TicTacToePlayer 8022
+  interface hash: 562679b61072fa802ef42b8ea8bd408a
+  ABI hash: 3772b654179457492a8c24a8ebe7fd43
+  export-list hash: 90e366d6b875a1e003428ed7fc867dd7
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 73bbfb07a2cc198332f47c5c19438df4
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  TicTacToePlayer.firstEmptyPlace
+  TicTacToePlayer.lazilyDecideHowToMove
+  TicTacToePlayer.oneDimIndexToTwoDim
+  TicTacToePlayer.otherPlayersField
+  TicTacToePlayer.sensiblyDecideHowToMove
+module dependencies: TicTacToeEngine
+package dependencies: array-0.5.2.0* base-4.10.1.0*
+                      ghc-prim-0.5.1.1 integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+import  -/  array-0.5.2.0:Data.Array 869b69aac66df5e34601dac3d3170393
+import  -/  base-4.10.1.0:Data.Maybe f51a1c24c4c11dca22ee9c2ea0071a10
+import  -/  base-4.10.1.0:GHC.Arr 80cd02c1e00d7b9b0ac8f460e89b2871
+import  -/  base-4.10.1.0:GHC.Num bee60808f8127e4cda82dd422aa1c6c0
+import  -/  base-4.10.1.0:GHC.Real 183566a07f0c201dd54a6bc28c33ed14
+import  -/  base-4.10.1.0:Prelude a93a9400cc0c816c2ee5f39399baa7a0
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 64ad5910d03ab188ab9b4adef7487b1e
+import  -/  TicTacToeEngine 971219555546008271827f0a0b523e81
+  exports: faaf23d5643856f163ecdef030a23e36
+  Board c5dd6e88bc4ab38727cfde4dac618563
+  Circle 4ecb6465e362d3778397232fa4b9052c
+  Cross cbfd38bc5c6384f8f52d48b88a80b29c
+  Empty 68df4d3b96af3e821fda898ec8060b01
+  Field b60afa5b5b69c35defc21cc08280d2a4
+  InProgress 300d602c31cd1089171762cc13e46ce8
+  makeAMove 97dfc9b884d40cbcd56df678b812985e
+  seeGameStatus 2d61d462d23d1d7ad5f4aff741ed8d50
+7797d572d49077b95c1e49a2c5574fba
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   TicTacToePlayer.$trModule3
+                   TicTacToePlayer.$trModule1) -}
+cbb79ca0b215e916a38e605fc5340312
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS TicTacToePlayer.$trModule2) -}
+988fdc8da5cae65fcf056eff9f7f36c2
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("TicTacToePlayer"#) -}
+176b2b5a2414a3a76212987be92c965f
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS TicTacToePlayer.$trModule4) -}
+7ef3b75a30cf4aff7c8004d040b8c7f6
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("projekt-0.1.0.0-224PrvOZtnxCf3bB64O2Ck"#) -}
+11543476596c7f4da035e4d6635b53da
+  $wfirstEmptyPlace ::
+    TicTacToeEngine.Board -> (# GHC.Types.Int, GHC.Types.Int #)
+  {- Arity: 1, Strictness: <L,1*U(A,A,U,U)>, Inline: [0],
+     Unfolding: (\ (w :: TicTacToeEngine.Board) ->
+                 let {
+                   index :: GHC.Types.Int
+                   = case w of wild { GHC.Arr.Array ds ds1 dt ds2 ->
+                     let {
+                       y :: GHC.Prim.Int# = GHC.Prim.-# dt 1#
+                     } in
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.># 0# y) of wild1 {
+                       GHC.Types.False
+                       -> letrec {
+                            go :: GHC.Prim.Int# -> [TicTacToeEngine.Field]
+                              {- Arity: 1, Strictness: <L,U> -}
+                            = \ (x :: GHC.Prim.Int#) ->
+                              GHC.Types.:
+                                @ TicTacToeEngine.Field
+                                (case GHC.Prim.indexArray#
+                                        @ TicTacToeEngine.Field
+                                        ds2
+                                        x of ds5 { Unit# ipv ->
+                                 ipv })
+                                (case GHC.Prim.tagToEnum#
+                                        @ GHC.Types.Bool
+                                        (GHC.Prim.==# x y) of wild2 {
+                                   GHC.Types.False -> go (GHC.Prim.+# x 1#)
+                                   GHC.Types.True -> GHC.Types.[] @ TicTacToeEngine.Field })
+                          } in
+                          case TicTacToePlayer.$wloop (go 0#) 0# of ww { DEFAULT ->
+                          GHC.Types.I# ww }
+                       GHC.Types.True -> TicTacToePlayer.firstEmptyPlace1 } }
+                 } in
+                 (# case index of ww { GHC.Types.I# ww1 ->
+                    case GHC.Classes.divInt# ww1 3# of ww4 { DEFAULT ->
+                    GHC.Types.I# ww4 } },
+                    case index of wild1 { GHC.Types.I# x ->
+                    case GHC.Classes.modInt# x 3# of ww2 { DEFAULT ->
+                    GHC.Types.I# ww2 } } #)) -}
+3983ad26f24e4895be24ce662a096b81
+  $wloop :: [TicTacToeEngine.Field] -> GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,U>, Inline: [0] -}
+374740c1a8f133f5d4d0fffce1031e7d
+  firstEmptyPlace ::
+    TicTacToeEngine.Board -> (GHC.Types.Int, GHC.Types.Int)
+  {- Arity: 1, Strictness: <L,1*U(A,A,U,U)>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: TicTacToeEngine.Board) ->
+                 case TicTacToePlayer.$wfirstEmptyPlace w of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+2a7b901939c5e64393be45fd10493191
+  firstEmptyPlace1 :: GHC.Types.Int
+  {- Unfolding: (case TicTacToePlayer.$wloop
+                        (GHC.Types.[] @ TicTacToeEngine.Field)
+                        0# of v { DEFAULT ->
+                 GHC.Types.I# v }) -}
+77d21892d6093b243b095e61f39145f8
+  lazilyDecideHowToMove ::
+    TicTacToeEngine.Field
+    -> TicTacToeEngine.Board -> GHC.Base.Maybe TicTacToeEngine.Board
+  {- Arity: 2,
+     Strictness: <S,1*U><L,U(U(U(U),U(U)),U(U(U),U(U)),U,U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (f :: TicTacToeEngine.Field) (board :: TicTacToeEngine.Board) ->
+                 TicTacToeEngine.makeAMove
+                   board
+                   f
+                   (TicTacToePlayer.firstEmptyPlace board)) -}
+b91601a2eb1992e0e3c0c860d4d37867
+  oneDimIndexToTwoDim ::
+    GHC.Types.Int -> (GHC.Types.Int, GHC.Types.Int)
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U)>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 (case w of ww { GHC.Types.I# ww1 ->
+                  case GHC.Classes.divInt# ww1 3# of ww4 { DEFAULT ->
+                  GHC.Types.I# ww4 } },
+                  case w of wild1 { GHC.Types.I# x ->
+                  case GHC.Classes.modInt# x 3# of ww2 { DEFAULT ->
+                  GHC.Types.I# ww2 } })) -}
+064912b4bb824b313c5c0e7e64800c0d
+  otherPlayersField :: TicTacToeEngine.Field -> TicTacToeEngine.Field
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: TicTacToeEngine.Field) ->
+                 case ds of wild {
+                   TicTacToeEngine.Empty -> TicTacToeEngine.Empty
+                   TicTacToeEngine.Cross -> TicTacToeEngine.Circle
+                   TicTacToeEngine.Circle -> TicTacToeEngine.Cross }) -}
+65b90f48b52d127e1e72977630606011
+  sensiblyDecideHowToMove ::
+    TicTacToeEngine.Field
+    -> TicTacToeEngine.Board -> GHC.Base.Maybe TicTacToeEngine.Board
+  {- Arity: 2,
+     Strictness: <S,U><L,U(U(U(U),U(U)),U(U(U),U(U)),U,U)> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

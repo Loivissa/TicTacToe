@@ -1,4 +1,4 @@
-module TicTacToePlayer(sensiblyDecideHowToMove, lazilyDecideHowToMove, oneDimIndexToTwoDim, otherPlayersField) where
+module TicTacToePlayer(sensiblyDecideHowToMove, lazilyDecideHowToMove, oneDimIndexToTwoDim, otherPlayersField, firstEmptyPlace) where
 import TicTacToeEngine
 import Data.Maybe
 import Data.Array

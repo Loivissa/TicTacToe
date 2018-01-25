@@ -1,0 +1,1061 @@
+
+==================== FINAL INTERFACE ====================
+2018-01-25 23:17:34.3231965 UTC
+
+interface main:Main 8022
+  interface hash: 4af487f8b73df2e0d7870419581d20b6
+  ABI hash: b76dccec2fe2d340b192753128ef8bf3
+  export-list hash: a698a2eca7a359ebdb39561ca59524a9
+  orphan hash: 94f5d961b293033ef5916167713a2849
+  flag hash: 29b15d34e3f754b83470dcfec918a4bf
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+module dependencies:
+package dependencies: HUnit-1.6.0.0 array-0.5.2.0* base-4.10.1.0*
+                      call-stack-0.1.0 deepseq-1.4.3.0 ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0 projekt-0.1.0.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+import  -/  HUnit-1.6.0.0:Test.HUnit e3e167f89a9ac65ab0f72f6880d10902
+import  -/  HUnit-1.6.0.0:Test.HUnit.Base e097cf308cc8c2e7419a983e9f94e8b6
+import  -/  HUnit-1.6.0.0:Test.HUnit.Lang 45e3fb1a16082c349db227e0c7fc83d3
+import  -/  HUnit-1.6.0.0:Test.HUnit.Text d8780014f9c915ff8cca3e0895b3adb3
+import  -/  array-0.5.2.0:Data.Array 869b69aac66df5e34601dac3d3170393
+import  -/  base-4.10.1.0:Data.Maybe f51a1c24c4c11dca22ee9c2ea0071a10
+import  -/  base-4.10.1.0:GHC.Arr 80cd02c1e00d7b9b0ac8f460e89b2871
+import  -/  base-4.10.1.0:GHC.Num bee60808f8127e4cda82dd422aa1c6c0
+import  -/  base-4.10.1.0:Prelude a93a9400cc0c816c2ee5f39399baa7a0
+import  -/  base-4.10.1.0:System.Exit c6d799ab7b4a533dd613584a0c7e1425
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 64ad5910d03ab188ab9b4adef7487b1e
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+import  -/  projekt-0.1.0.0:TicTacToeBoard 1c5fee7f98151de46d3ce8c32d4d2200
+import  -/  projekt-0.1.0.0:TicTacToeEngine 971219555546008271827f0a0b523e81
+import  -/  projekt-0.1.0.0:TicTacToePlayer 3772b654179457492a8c24a8ebe7fd43
+0c6419470f05dd541ba8107ad469bfd4
+  $s$fShow(,) :: GHC.Show.Show (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Types.Int, GHC.Types.Int)
+                  (GHC.Show.$fShow(,)_$cshowsPrec
+                     @ GHC.Types.Int
+                     @ GHC.Types.Int
+                     GHC.Show.$fShowInt
+                     GHC.Show.$fShowInt)
+                  (\ (x :: (GHC.Types.Int, GHC.Types.Int)) ->
+                   GHC.Show.$fShow(,)_$cshowsPrec
+                     @ GHC.Types.Int
+                     @ GHC.Types.Int
+                     GHC.Show.$fShowInt
+                     GHC.Show.$fShowInt
+                     GHC.Show.$fShow(,)1
+                     x
+                     (GHC.Types.[] @ GHC.Types.Char))
+                  (\ (ls :: [(GHC.Types.Int, GHC.Types.Int)])
+                     (s :: GHC.Base.String) ->
+                   GHC.Show.showList__
+                     @ (GHC.Types.Int, GHC.Types.Int)
+                     (GHC.Show.$fShow(,)_$cshowsPrec
+                        @ GHC.Types.Int
+                        @ GHC.Types.Int
+                        GHC.Show.$fShowInt
+                        GHC.Show.$fShowInt
+                        GHC.Show.$fShow(,)1)
+                     ls
+                     s) -}
+9d72b2fddb818bcd8919052935e0f1f3
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule3 Main.$trModule1) -}
+3108ceeaf5a318be844de422b45de9d8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule2) -}
+e5875966b74dad2d29772660b8a75e33
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Main"#) -}
+33bd129667974f0a0ba4a893af79107d
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule4) -}
+d026be77cb9ced20e35a61514e0458aa
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+944299a97ad24a69aa402ded6830662f
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+85fd1cfd93a23aefc0733911d66b550b
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Test.HUnit.Text.runTestTT5 of ww { Test.HUnit.Text.PutText ww1 ww2 ->
+                 case Test.HUnit.Text.$wrunTestText
+                        @ GHC.Types.Int
+                        ww1
+                        ww2
+                        Main.main2
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { (,) counts' ds ->
+                 case ds of wild1 { GHC.Types.I# ds2 ->
+                 case ds2 of ds3 {
+                   DEFAULT
+                   -> case Test.HUnit.Text.runTestTT2
+                             `cast`
+                           (GHC.Types.N:IO[0] <Test.HUnit.Base.Counts>_R)
+                             ipv of ds4 { (#,#) ipv2 ipv3 ->
+                      case ipv3 of wild2 { Test.HUnit.Base.Counts ds5 ds6 ds7 ds8 ->
+                      case ds7 of wild3 { GHC.Types.I# x ->
+                      case ds8 of wild4 { GHC.Types.I# y ->
+                      case GHC.Prim.+# x y of wild5 {
+                        DEFAULT -> System.Exit.exitFailure1 @ () ipv2
+                        0# -> System.Exit.exitSuccess1 @ () ipv2 } } } } }
+                   0#
+                   -> case counts' of wild2 { Test.HUnit.Base.Counts ds4 ds5 ds6 ds7 ->
+                      case ds6 of wild3 { GHC.Types.I# x ->
+                      case ds7 of wild4 { GHC.Types.I# y ->
+                      case GHC.Prim.+# x y of wild5 {
+                        DEFAULT -> System.Exit.exitFailure1 @ () ipv
+                        0# -> System.Exit.exitSuccess1 @ () ipv } } } } } } } } }) -}
+6ca7227fe6f86fb1e17a811852116d46
+  main10 :: [Test.HUnit.Base.Test]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.HUnit.Base.Test
+                   Main.main36
+                   Main.main11) -}
+350565d4c00a11f5901a721a8ae36d21
+  main11 :: [Test.HUnit.Base.Test]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.HUnit.Base.Test
+                   Main.main18
+                   Main.main12) -}
+02131cff3294cde69b1647b7e372afe8
+  main12 :: [Test.HUnit.Base.Test]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.HUnit.Base.Test
+                   Main.main13
+                   (GHC.Types.[] @ Test.HUnit.Base.Test)) -}
+37fd018dd3f057fdc8a5a6329dfd4ddc
+  main13 :: Test.HUnit.Base.Test
+  {- Strictness: m3,
+     Unfolding: (Test.HUnit.Base.TestLabel Main.main16 Main.main14) -}
+cf47b23db0756313438d675dc053da32
+  main14 :: Test.HUnit.Base.Test
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Test.HUnit.Base.TestCase
+                   Main.main15 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+3e6c51b22a21ba7e9d6eb7603204863c
+  main15 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: (\ (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 (# eta2, GHC.Tuple.() #)) -}
+35f7da119ae713ce703df1b1e3d1f392
+  main16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main17) -}
+020cee2e543c7b248e23836d0f7812d3
+  main17 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("test oneDimIndexToTwoDim"#) -}
+bd0dbb4271316af059410b5924da205b
+  main18 :: Test.HUnit.Base.Test
+  {- Strictness: m3,
+     Unfolding: (Test.HUnit.Base.TestLabel Main.main34 Main.main19) -}
+1dde223841338c9cf2019a34ec5bc6b8
+  main19 :: Test.HUnit.Base.Test
+  {- Strictness: m1,
+     Unfolding: (Test.HUnit.Base.TestCase
+                   Main.main20 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+aac448d255bce395e78817c0400d62d7
+  main2 :: Test.HUnit.Base.Test
+  {- Strictness: m2,
+     Unfolding: (Test.HUnit.Base.TestList Main.main3) -}
+7710f9b987102901f6798b662621a43c
+  main20 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 Test.HUnit.Lang.assertEqual1
+                   @ TicTacToeEngine.Field
+                   Main.main21
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   TicTacToeEngine.$fEqField
+                   TicTacToeEngine.$fShowField
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   TicTacToeEngine.Cross
+                   TicTacToeEngine.Cross
+                   eta2) -}
+2a1c090d0949cbdf7d1f78935310b4a7
+  main21 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.HUnit.Base.@=?6
+                   Test.HUnit.Base.@=?2
+                   Main.main22) -}
+bb21a0db7d58f0a7a42ab370b37eba4f
+  main22 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.HUnit.Base.~=?4
+                   Test.HUnit.Base.~=?1
+                   Main.main23) -}
+317d4ef74aa8e1c174fd908a773d8282
+  main23 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   Main.main32
+                   Main.main24
+                   GHC.Stack.Types.EmptyCallStack) -}
+57a6a50db7456e87ab0c3893fdb1e4f1
+  main24 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   Main.main31
+                   Main.main30
+                   Main.main28
+                   Main.main27
+                   Main.main26
+                   Main.main27
+                   Main.main25) -}
+539a733760168f39d1b35b913b9470e3
+  main25 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 82#) -}
+4778a0731084d20d098639116b53ee6f
+  main26 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 48#) -}
+ae8a0951cebc32481bc5f2a4ed73c963
+  main27 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 38#) -}
+e68b76a6cde7c2a02453d2db55d1d118
+  main28 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main29) -}
+a273cbd69f167ab6d59ca213ee44745b
+  main29 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("test\\Spec.hs"#) -}
+9091f89675fcce994065726cba130d7d
+  main3 :: [Test.HUnit.Base.Test]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.HUnit.Base.Test
+                   Main.main88
+                   Main.main4) -}
+8342b42f133ad0d81d95bb6514a1c26a
+  main30 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$trModule2) -}
+e882de479a8c0dcb93730227d4a9b591
+  main31 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.$trModule4) -}
+4a14e5caaf3de24acc67a7a2dddeda07
+  main32 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main33) -}
+fc446805e394b870a59d3cdf4e68c570
+  main33 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("~=?"#) -}
+2026180f8a4ee6f072a142361390abd6
+  main34 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main35) -}
+325e19c4ce66e9074c4f31df8465747d
+  main35 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("test otherPlayersField"#) -}
+0062276b278200c7a6eadbeb04da1699
+  main36 :: Test.HUnit.Base.Test
+  {- Strictness: m3,
+     Unfolding: (Test.HUnit.Base.TestLabel Main.main44 Main.main37) -}
+a59ead67caa4e09aada69c7da193fe90
+  main37 :: Test.HUnit.Base.Test
+  {- Strictness: m1,
+     Unfolding: (Test.HUnit.Base.TestCase
+                   Main.main38 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+d7fb4207108ad3413c3d26fffa61955e
+  main38 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Main.main_eta2 of ww { (,) ww1 ww2 ->
+                 case ww1 of wild { GHC.Types.I# x ->
+                 case x of wild1 {
+                   DEFAULT -> Main.main39 eta2
+                   0#
+                   -> case ww2 of wild2 { GHC.Types.I# x1 ->
+                      case x1 of wild3 {
+                        DEFAULT -> Main.main39 eta2
+                        1# -> (# eta2, GHC.Tuple.() #) } } } } }) -}
+907b1640360c0ef0bf1671a07d9e2a78
+  main39 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <B,U>x -}
+b31f748164d099db185e0a898e41a8f7
+  main4 :: [Test.HUnit.Base.Test]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.HUnit.Base.Test
+                   Main.main76
+                   Main.main5) -}
+167e48348a34f314584521c860c9783a
+  main40 :: TicTacToeEngine.Board
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld,
+                             GHC.Arr.Array
+                               (GHC.Types.Int, GHC.Types.Int) TicTacToeEngine.Field #)
+                        Main.main41 of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+50ca9fdaf5697a3752019a860dcdd103
+  main41 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Arr.Array
+            (GHC.Types.Int, GHC.Types.Int) TicTacToeEngine.Field #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s1# :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newArray#
+                        @ TicTacToeEngine.Field
+                        @ GHC.Prim.RealWorld
+                        9#
+                        (GHC.Arr.arrEleBottom @ TicTacToeEngine.Field)
+                        s1# of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        0#
+                        TicTacToeEngine.Cross
+                        ipv of s4# { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        1#
+                        TicTacToeEngine.Empty
+                        s4# of s4#1 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        2#
+                        TicTacToeEngine.Circle
+                        s4#1 of s4#2 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        3#
+                        TicTacToeEngine.Cross
+                        s4#2 of s4#3 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        4#
+                        TicTacToeEngine.Circle
+                        s4#3 of s4#4 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        5#
+                        TicTacToeEngine.Empty
+                        s4#4 of s4#5 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        6#
+                        TicTacToeEngine.Circle
+                        s4#5 of s4#6 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        7#
+                        TicTacToeEngine.Empty
+                        s4#6 of s4#7 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        8#
+                        TicTacToeEngine.Empty
+                        s4#7 of wild4 { DEFAULT ->
+                 case GHC.Prim.unsafeFreezeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        wild4 of ds2 { (#,#) ipv2 ipv3 ->
+                 (# ipv2,
+                    GHC.Arr.Array
+                      @ (GHC.Types.Int, GHC.Types.Int)
+                      @ TicTacToeEngine.Field
+                      Main.main_l
+                      Main.main_u
+                      9#
+                      ipv3 #) } } } } } } } } } } }) -}
+bf6b080fc7e25c90f6d28961b1d1478d
+  main42 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 2#) -}
+f63f331419fce4814757407c3fe873c6
+  main43 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+c04a27a2dc6a9de386b6d9be568a7f0b
+  main44 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main45) -}
+ed907bab5030a28d43d935d7af8f233f
+  main45 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("test firstEmptyPlace"#) -}
+bc894380f9b99c8ef4f195560d34c1e8
+  main46 :: Test.HUnit.Base.Test
+  {- Strictness: m3,
+     Unfolding: (Test.HUnit.Base.TestLabel Main.main51 Main.main47) -}
+a22da8440cf04213ecd6abccbd918fc4
+  main47 :: Test.HUnit.Base.Test
+  {- Strictness: m1,
+     Unfolding: (Test.HUnit.Base.TestCase
+                   Main.main48 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+e22ae3811c39dbcb97bb0af273ed5e32
+  main48 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Base.eqString Main.main_eta4 Main.main_eta1 of wild {
+                   GHC.Types.False -> Main.main49 eta2
+                   GHC.Types.True -> (# eta2, GHC.Tuple.() #) }) -}
+a1b69371802d9f13005f754a9163e7ab
+  main49 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <B,U>x -}
+4ca0143da4634d3f6e9b6ddd443f8261
+  main5 :: [Test.HUnit.Base.Test]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.HUnit.Base.Test
+                   Main.main65
+                   Main.main6) -}
+f506f7b727d07555943f8a5109e74658
+  main50 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: (",,,,,,,\n\
+                 \| | | |\n\
+                 \| | | |\n\
+                 \| | | |\n\
+                 \'''''''"#) -}
+6a3ecb0426e33c2edd26c50bbe6da4db
+  main51 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main52) -}
+861355c454df21547c20c00652c7e1e7
+  main52 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("test boasrdToString"#) -}
+3c85451d415b784a96e8e56433b2ada7
+  main53 :: Test.HUnit.Base.Test
+  {- Strictness: m1,
+     Unfolding: (Test.HUnit.Base.TestCase
+                   Main.main54 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+2e0887a97bd04fbfebf3a75953848c76
+  main54 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Main.main64 of wild {
+                   DEFAULT
+                   -> case Test.HUnit.Lang.assertEqual_go Main.main62 of wild2 { () ->
+                      case Test.HUnit.Lang.assertEqual_go
+                             TicTacToeEngine.$fShowGameStatus3 of wild3 { () ->
+                      let {
+                        actualMsg3 :: GHC.Base.String
+                        = case wild of wild1 {
+                            TicTacToeEngine.InProgress -> TicTacToeEngine.$fShowGameStatus7
+                            TicTacToeEngine.CrossWon -> TicTacToeEngine.$fShowGameStatus5
+                            TicTacToeEngine.Stalemate -> TicTacToeEngine.$fShowGameStatus1 }
+                      } in
+                      case Test.HUnit.Lang.assertEqual_go actualMsg3 of wild1 { () ->
+                      Test.HUnit.Lang.assertEqual12
+                        TicTacToeEngine.$fShowGameStatus3
+                        (GHC.Base.Just @ GHC.Base.String Main.main62)
+                        actualMsg3
+                        (GHC.Stack.Types.PushCallStack
+                           Test.HUnit.Lang.assertEqual10
+                           Test.HUnit.Lang.assertEqual2
+                           Main.main55)
+                        eta3 } } }
+                   TicTacToeEngine.CircleWon -> (# eta3, GHC.Tuple.() #) }) -}
+c850efc558e1c016b64074ee88b0e8cd
+  main55 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   Main.main60
+                   Main.main56
+                   GHC.Stack.Types.EmptyCallStack) -}
+4863f9b79e775d5fac9f4140cd4ec835
+  main56 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   Main.main31
+                   Main.main30
+                   Main.main28
+                   Main.main59
+                   Main.main58
+                   Main.main59
+                   Main.main57) -}
+b04977ae48590b040c0735f38754719d
+  main57 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 188#) -}
+c6c1f2f86f78628bf4e8eed4a23635bc
+  main58 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 36#) -}
+b21621135e9c84bdf08bfda88dc32871
+  main59 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 34#) -}
+8ff3b2cf61936ab5b978a70d0f39d6da
+  main6 :: [Test.HUnit.Base.Test]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.HUnit.Base.Test
+                   Main.main53
+                   Main.main7) -}
+d8df07b5fd1a18296c163dc68b466a55
+  main60 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main61) -}
+b136c6f294b890390b9e6db444ac157f
+  main61 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("assertEqual"#) -}
+eea924daecea5890dfe6d0e42a241b53
+  main62 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main63) -}
+f5ebc1674405931d301cd033c7790a7f
+  main63 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("But the circles won!"#) -}
+9ebe3f4bc59830481dc9a477c4143695
+  main64 :: TicTacToeEngine.GameStatus
+  {- Unfolding: (TicTacToeEngine.seeGameStatus Main.main40) -}
+f33011ab4eda9d12a1b708b43074b9f6
+  main65 :: Test.HUnit.Base.Test
+  {- Strictness: m1,
+     Unfolding: (Test.HUnit.Base.TestCase
+                   Main.main66 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+3179d2aadd7a4119832825c215ef7423
+  main66 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Main.main73 of wild {
+                   GHC.Base.Nothing -> (# eta3, GHC.Tuple.() #)
+                   GHC.Base.Just a1
+                   -> case Test.HUnit.Lang.assertEqual_go Main.main71 of wild2 { () ->
+                      case Test.HUnit.Lang.assertEqual_go
+                             GHC.Show.$fShowMaybe4 of wild3 { () ->
+                      let {
+                        actualMsg3 :: GHC.Base.String
+                        = let {
+                            z :: [GHC.Types.Char]
+                            = GHC.Arr.$w$cshowsPrec
+                                @ (GHC.Types.Int, GHC.Types.Int)
+                                @ TicTacToeEngine.Field
+                                GHC.Arr.$fIx(,)_$s$fIx(,)
+                                Main.$s$fShow(,)
+                                TicTacToeEngine.$fShowField
+                                11#
+                                a1
+                                (GHC.Types.[] @ GHC.Types.Char)
+                          } in
+                          letrec {
+                            go :: [GHC.Types.Char] -> [GHC.Types.Char]
+                              {- Arity: 1, Strictness: <S,1*U> -}
+                            = \ (ds :: [GHC.Types.Char]) ->
+                              case ds of wild1 {
+                                [] -> z : y ys -> GHC.Types.: @ GHC.Types.Char y (go ys) }
+                          } in
+                          go GHC.Show.$fShowMaybe1
+                      } in
+                      case Test.HUnit.Lang.assertEqual_go actualMsg3 of wild1 { () ->
+                      Test.HUnit.Lang.assertEqual12
+                        GHC.Show.$fShowMaybe4
+                        (GHC.Base.Just @ GHC.Base.String Main.main71)
+                        actualMsg3
+                        (GHC.Stack.Types.PushCallStack
+                           Test.HUnit.Lang.assertEqual10
+                           Test.HUnit.Lang.assertEqual2
+                           Main.main67)
+                        eta3 } } } }) -}
+6359238b104717b6cf8e36df25d59d5a
+  main67 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   Main.main60
+                   Main.main68
+                   GHC.Stack.Types.EmptyCallStack) -}
+d38cde3767f36d918c696a163feb4e0f
+  main68 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   Main.main31
+                   Main.main30
+                   Main.main28
+                   Main.main70
+                   Main.main59
+                   Main.main70
+                   Main.main69) -}
+8dd17abce0d83bcda2beafc26f9d2123
+  main69 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 193#) -}
+02348dc6e8469bfa506085fb1bfe0965
+  main7 :: [Test.HUnit.Base.Test]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.HUnit.Base.Test
+                   Main.main8
+                   (GHC.Types.[] @ Test.HUnit.Base.Test)) -}
+67da1a5a225b1afad6deb7a78c11bd85
+  main70 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 31#) -}
+915c0ea9563a895806b5d667a50fc57f
+  main71 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main72) -}
+09237696b17ce949854b41c6fabc92da
+  main72 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("This shouldn't work!"#) -}
+7dfe9b2ca76f9a0a4428640255014839
+  main73 :: GHC.Base.Maybe TicTacToeEngine.Board
+  {- Unfolding: (TicTacToePlayer.sensiblyDecideHowToMove
+                   TicTacToeEngine.Cross
+                   Main.main74) -}
+f0fbe594ed9512a27f237f448389639c
+  main74 :: TicTacToeEngine.Board
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld,
+                             GHC.Arr.Array
+                               (GHC.Types.Int, GHC.Types.Int) TicTacToeEngine.Field #)
+                        Main.main75 of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+e1b2f3aea807ee4297ba8a75569ae91e
+  main75 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Arr.Array
+            (GHC.Types.Int, GHC.Types.Int) TicTacToeEngine.Field #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s1# :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newArray#
+                        @ TicTacToeEngine.Field
+                        @ GHC.Prim.RealWorld
+                        9#
+                        (GHC.Arr.arrEleBottom @ TicTacToeEngine.Field)
+                        s1# of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        0#
+                        TicTacToeEngine.Cross
+                        ipv of s4# { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        1#
+                        TicTacToeEngine.Circle
+                        s4# of s4#1 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        2#
+                        TicTacToeEngine.Cross
+                        s4#1 of s4#2 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        3#
+                        TicTacToeEngine.Circle
+                        s4#2 of s4#3 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        4#
+                        TicTacToeEngine.Cross
+                        s4#3 of s4#4 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        5#
+                        TicTacToeEngine.Cross
+                        s4#4 of s4#5 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        6#
+                        TicTacToeEngine.Cross
+                        s4#5 of s4#6 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        7#
+                        TicTacToeEngine.Circle
+                        s4#6 of s4#7 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        8#
+                        TicTacToeEngine.Cross
+                        s4#7 of wild4 { DEFAULT ->
+                 case GHC.Prim.unsafeFreezeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        wild4 of ds2 { (#,#) ipv2 ipv3 ->
+                 (# ipv2,
+                    GHC.Arr.Array
+                      @ (GHC.Types.Int, GHC.Types.Int)
+                      @ TicTacToeEngine.Field
+                      Main.main_l
+                      Main.main_u
+                      9#
+                      ipv3 #) } } } } } } } } } } }) -}
+00497a6c0d499d73341af4c93fc09f29
+  main76 :: Test.HUnit.Base.Test
+  {- Strictness: m1,
+     Unfolding: (Test.HUnit.Base.TestCase
+                   Main.main77 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+c1cae7b477b1d47f73bf48a4e526360c
+  main77 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Main.main84 of wild {
+                   DEFAULT
+                   -> case Test.HUnit.Lang.assertEqual_go Main.main82 of wild2 { () ->
+                      case Test.HUnit.Lang.assertEqual_go
+                             TicTacToeEngine.$fShowGameStatus5 of wild3 { () ->
+                      let {
+                        actualMsg3 :: GHC.Base.String
+                        = case wild of wild1 {
+                            TicTacToeEngine.InProgress -> TicTacToeEngine.$fShowGameStatus7
+                            TicTacToeEngine.CircleWon -> TicTacToeEngine.$fShowGameStatus3
+                            TicTacToeEngine.Stalemate -> TicTacToeEngine.$fShowGameStatus1 }
+                      } in
+                      case Test.HUnit.Lang.assertEqual_go actualMsg3 of wild1 { () ->
+                      Test.HUnit.Lang.assertEqual12
+                        TicTacToeEngine.$fShowGameStatus5
+                        (GHC.Base.Just @ GHC.Base.String Main.main82)
+                        actualMsg3
+                        (GHC.Stack.Types.PushCallStack
+                           Test.HUnit.Lang.assertEqual10
+                           Test.HUnit.Lang.assertEqual2
+                           Main.main78)
+                        eta3 } } }
+                   TicTacToeEngine.CrossWon -> (# eta3, GHC.Tuple.() #) }) -}
+90511447ae2985e4c2775e946e63f05b
+  main78 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   Main.main60
+                   Main.main79
+                   GHC.Stack.Types.EmptyCallStack) -}
+52ebb3da463f3dc3b6d550dfb4c044c9
+  main79 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   Main.main31
+                   Main.main30
+                   Main.main28
+                   Main.main81
+                   Main.main58
+                   Main.main81
+                   Main.main80) -}
+bcc1ca6bb24b320fe96797c18f570766
+  main8 :: Test.HUnit.Base.Test
+  {- Strictness: m2,
+     Unfolding: (Test.HUnit.Base.TestList Main.main9) -}
+ce0970cabdfc300df3ef1e5c89d35755
+  main80 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 225#) -}
+89650113a5aac0dfeaa58a9157cc70b2
+  main81 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 28#) -}
+87b982ac20ad1e347d0652cae50977ed
+  main82 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main83) -}
+dccff87e4c75ada6b8bdd37c8556244a
+  main83 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("That should have been won!"#) -}
+cd8ff021e77c43e374acc6ddf0e1b6b3
+  main84 :: TicTacToeEngine.GameStatus
+  {- Unfolding: (TicTacToeEngine.seeGameStatus Main.main85) -}
+7f85a4c31f1067bb0a07fca555f0303e
+  main85 :: TicTacToeEngine.Board
+  {- Unfolding: (case TicTacToePlayer.sensiblyDecideHowToMove
+                        TicTacToeEngine.Cross
+                        Main.main86 of wild {
+                   GHC.Base.Nothing -> Data.Maybe.fromJust1 @ TicTacToeEngine.Board
+                   GHC.Base.Just x -> x }) -}
+86ef63b5b2b3175bb9756079ef56f8f8
+  main86 :: TicTacToeEngine.Board
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld,
+                             GHC.Arr.Array
+                               (GHC.Types.Int, GHC.Types.Int) TicTacToeEngine.Field #)
+                        Main.main87 of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+b9276e1122c5064837e77855dd28b893
+  main87 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Arr.Array
+            (GHC.Types.Int, GHC.Types.Int) TicTacToeEngine.Field #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s1# :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newArray#
+                        @ TicTacToeEngine.Field
+                        @ GHC.Prim.RealWorld
+                        9#
+                        (GHC.Arr.arrEleBottom @ TicTacToeEngine.Field)
+                        s1# of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        0#
+                        TicTacToeEngine.Empty
+                        ipv of s4# { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        1#
+                        TicTacToeEngine.Empty
+                        s4# of s4#1 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        2#
+                        TicTacToeEngine.Empty
+                        s4#1 of s4#2 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        3#
+                        TicTacToeEngine.Empty
+                        s4#2 of s4#3 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        4#
+                        TicTacToeEngine.Empty
+                        s4#3 of s4#4 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        5#
+                        TicTacToeEngine.Empty
+                        s4#4 of s4#5 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        6#
+                        TicTacToeEngine.Cross
+                        s4#5 of s4#6 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        7#
+                        TicTacToeEngine.Empty
+                        s4#6 of s4#7 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        8#
+                        TicTacToeEngine.Cross
+                        s4#7 of wild4 { DEFAULT ->
+                 case GHC.Prim.unsafeFreezeArray#
+                        @ GHC.Prim.RealWorld
+                        @ TicTacToeEngine.Field
+                        ipv1
+                        wild4 of ds2 { (#,#) ipv2 ipv3 ->
+                 (# ipv2,
+                    GHC.Arr.Array
+                      @ (GHC.Types.Int, GHC.Types.Int)
+                      @ TicTacToeEngine.Field
+                      Main.main_l
+                      Main.main_u
+                      9#
+                      ipv3 #) } } } } } } } } } } }) -}
+6c2e2ed5d09f854e4cb8e14ba776d1ec
+  main88 :: Test.HUnit.Base.Test
+  {- Strictness: m1,
+     Unfolding: (Test.HUnit.Base.TestCase
+                   Main.main89 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+20ad22bc0e11bd513e317b68dd957e1e
+  main89 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Base.eqString
+                        TicTacToeBoard.convertFieldToString3
+                        Main.main97 of wild {
+                   GHC.Types.False
+                   -> let {
+                        expectedMsg4 :: GHC.Base.String
+                        = GHC.Show.showLitString Main.main97 GHC.Show.$fShow[]1
+                      } in
+                      let {
+                        expectedMsg5 :: GHC.Base.String
+                        = GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)3 expectedMsg4
+                      } in
+                      case Test.HUnit.Lang.assertEqual_go Main.main95 of wild2 { () ->
+                      case Test.HUnit.Lang.assertEqual_go expectedMsg5 of wild3 { () ->
+                      let {
+                        actualMsg3 :: GHC.Base.String
+                        = GHC.Show.showLitString
+                            TicTacToeBoard.convertFieldToString3
+                            GHC.Show.$fShow[]1
+                      } in
+                      let {
+                        actualMsg4 :: GHC.Base.String
+                        = GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)3 actualMsg3
+                      } in
+                      case Test.HUnit.Lang.assertEqual_go actualMsg4 of wild1 { () ->
+                      Test.HUnit.Lang.assertEqual12
+                        expectedMsg5
+                        (GHC.Base.Just @ GHC.Base.String Main.main95)
+                        actualMsg4
+                        (GHC.Stack.Types.PushCallStack
+                           Test.HUnit.Lang.assertEqual10
+                           Test.HUnit.Lang.assertEqual2
+                           Main.main90)
+                        eta3 } } }
+                   GHC.Types.True -> (# eta3, GHC.Tuple.() #) }) -}
+881a6cb98847ef114885595e4c8403d6
+  main9 :: [Test.HUnit.Base.Test]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.HUnit.Base.Test
+                   Main.main46
+                   Main.main10) -}
+06626a65f9ed87ae1a1e9e727679941c
+  main90 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   Main.main60
+                   Main.main91
+                   GHC.Stack.Types.EmptyCallStack) -}
+6397b70cc579cea8f37b3880a74c85d9
+  main91 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   Main.main31
+                   Main.main30
+                   Main.main28
+                   Main.main94
+                   Main.main93
+                   Main.main94
+                   Main.main92) -}
+9ac9aa0f1c38738bedbc4e8ca963dfab
+  main92 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 100#) -}
+c910d2faba6dbe6e1e20e3786eb54241
+  main93 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 35#) -}
+fa77432cf02090a4bb9a1bb91c6c3589
+  main94 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 25#) -}
+5127d3e548f94cfb7ba914778be967ed
+  main95 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main96) -}
+51af31edae2eb28b4ff99aa0c38c646b
+  main96 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Cross should be X!"#) -}
+d8042f40af957e1d5502e94d71a8ab9a
+  main97 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main98) -}
+a7c7b2b6b0ac37851c58e7eaf8034ee2
+  main98 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("X"#) -}
+e69b4505a01471e679acf1e2db748248
+  main99 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+7029fba200c6d8f7b03878f838cbc89f
+  main_eta1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main50) -}
+50a1a0e7db970ec9353ed561f8cedd49
+  main_eta2 :: (GHC.Types.Int, GHC.Types.Int)
+  {- Unfolding: (case TicTacToePlayer.$wfirstEmptyPlace
+                        Main.main40 of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+d33f6e30ff0684a7320229733f0df5ce
+  main_eta4 :: [GHC.Types.Char]
+  {- Unfolding: (TicTacToeBoard.boardToString
+                   TicTacToeEngine.newBoard) -}
+1ca4e8c5bc54573c2da5507d8c459220
+  main_l :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Main.main43, Main.main43)) -}
+4aed99b18bdbcfd37e42b2ef4eb046b1
+  main_u :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Main.main42, Main.main42)) -}
+"SPEC/Main $fShow(,) @ Int @ Int" [orphan] forall (v1 :: GHC.Show.Show
+                                                           GHC.Types.Int)
+                                                  (v :: GHC.Show.Show GHC.Types.Int)
+  GHC.Show.$fShow(,) @ GHC.Types.Int @ GHC.Types.Int v v1
+  = Main.$s$fShow(,)
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

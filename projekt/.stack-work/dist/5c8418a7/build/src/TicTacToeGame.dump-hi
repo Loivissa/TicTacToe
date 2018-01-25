@@ -1,0 +1,144 @@
+
+==================== FINAL INTERFACE ====================
+2018-01-25 23:15:39.5510326 UTC
+
+interface projekt-0.1.0.0-224PrvOZtnxCf3bB64O2Ck:TicTacToeGame 8022
+  interface hash: f5cda7d063abee90aa8ad103890d6d64
+  ABI hash: d16c3a3a8673b5c55decb4249ae78285
+  export-list hash: 416d0b620be13b12e34b1207ed7bb70b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 73bbfb07a2cc198332f47c5c19438df4
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  TicTacToeGame.gameLoop
+  TicTacToeGame.playAGame
+module dependencies: TicTacToeBoard TicTacToeEngine TicTacToePlayer
+package dependencies: array-0.5.2.0* base-4.10.1.0*
+                      ghc-prim-0.5.1.1 integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+import  -/  array-0.5.2.0:Data.Array 869b69aac66df5e34601dac3d3170393
+import  -/  base-4.10.1.0:GHC.Base 8f949d675e49677c272f02ab7a85fe18
+import  -/  base-4.10.1.0:Prelude a93a9400cc0c816c2ee5f39399baa7a0
+import  -/  base-4.10.1.0:System.IO 1fb8f1d116df69c8750950ac088a90e6
+import  -/  base-4.10.1.0:Text.Read c150617dda21a009ed26981626bd21d7
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 64ad5910d03ab188ab9b4adef7487b1e
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+import  -/  TicTacToeBoard 1c5fee7f98151de46d3ce8c32d4d2200
+  exports: a295861b9dd4951fc04e1e1d99a9fb79
+  boardToString f9a19a8463c49a52707bc29c13dfec67
+  convertFieldToString 90627d6e6bd99d2436dfbba6160748d4
+  eliminate 0e3298fdb9d052c56ea37716e959ee36
+  eliminate2 4d33e2aea196a4ac47b8ddf603dfc9b6
+  help 2e06706ab08d6120d8952ad40d5be046
+import  -/  TicTacToeEngine 971219555546008271827f0a0b523e81
+  exports: faaf23d5643856f163ecdef030a23e36
+  Board c5dd6e88bc4ab38727cfde4dac618563
+  Circle 4ecb6465e362d3778397232fa4b9052c
+  CircleWon 1a3a6157141a5d9f6c623f17b7712c09
+  Cross cbfd38bc5c6384f8f52d48b88a80b29c
+  CrossWon 4cbb956df228ebd3da01f9382a2075c2
+  Field b60afa5b5b69c35defc21cc08280d2a4
+  Stalemate bb3a91f625a92c5c3fde31413301d114
+  makeAMove 97dfc9b884d40cbcd56df678b812985e
+  newBoard 503fa14c413ae1acc13a181ffe40f07a
+  seeGameStatus 2d61d462d23d1d7ad5f4aff741ed8d50
+import  -/  TicTacToePlayer 3772b654179457492a8c24a8ebe7fd43
+  exports: 90e366d6b875a1e003428ed7fc867dd7
+  lazilyDecideHowToMove 77d21892d6093b243b095e61f39145f8
+  oneDimIndexToTwoDim b91601a2eb1992e0e3c0c860d4d37867
+  otherPlayersField 064912b4bb824b313c5c0e7e64800c0d
+  sensiblyDecideHowToMove 65b90f48b52d127e1e72977630606011
+16c2e1bae0e7e124c59d5fc690c2d241
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   TicTacToeGame.$trModule3
+                   TicTacToeGame.$trModule1) -}
+52b4ecf5d9114ca5e9b4588d2236a960
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS TicTacToeGame.$trModule2) -}
+38de1c6682237c20129897cfddbd96bb
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("TicTacToeGame"#) -}
+0268ee4b4c55db1012a77423e629f9b1
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS TicTacToeGame.$trModule4) -}
+c45f634c7748c44f9e9f68cfc4352ea9
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("projekt-0.1.0.0-224PrvOZtnxCf3bB64O2Ck"#) -}
+6e9c05d295433dd411f54ec9105b82a5
+  $wgameLoop ::
+    GHC.Prim.Int#
+    -> TicTacToeEngine.Field
+    -> GHC.Types.Int
+    -> TicTacToeEngine.Board
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 5,
+     Strictness: <S,1*U><L,U><L,1*U(U)><L,U(U(U(U),U(U)),U(U(U),U(U)),U,U)><S,U>,
+     Inline: [0] -}
+37355629ec73b2e105929e89bca8c366
+  gameLoop ::
+    GHC.Types.Int
+    -> TicTacToeEngine.Field
+    -> GHC.Types.Int
+    -> TicTacToeEngine.Board
+    -> GHC.Types.IO ()
+  {- Arity: 5,
+     Strictness: <S(S),1*U(1*U)><L,U><L,1*U(U)><L,U(U(U(U),U(U)),U(U(U),U(U)),U,U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                TicTacToeGame.gameLoop1
+                  `cast`
+                (<GHC.Types.Int>_R
+                 ->_R <TicTacToeEngine.Field>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R <TicTacToeEngine.Board>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+93d8e79c486e8030bedc77dcdb0adba4
+  gameLoop1 ::
+    GHC.Types.Int
+    -> TicTacToeEngine.Field
+    -> GHC.Types.Int
+    -> TicTacToeEngine.Board
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 5,
+     Strictness: <S(S),1*U(1*U)><L,U><L,1*U(U)><L,U(U(U(U),U(U)),U(U(U),U(U)),U,U)><S,U>,
+     Inline: [0],
+     Unfolding: InlineRule (5, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: TicTacToeEngine.Field)
+                   (w2 :: GHC.Types.Int)
+                   (w3 :: TicTacToeEngine.Board)
+                   (w4 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 TicTacToeGame.$wgameLoop ww1 w1 w2 w3 w4 }) -}
+97cdf0712ca0bc6e096207dbf3661acc
+  playAGame :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                TicTacToeGame.playAGame1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+7aa971e3fe3c0685f530470a28df2e0f
+  playAGame1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

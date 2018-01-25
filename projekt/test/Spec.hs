@@ -11,9 +11,10 @@ main :: IO ()
 main = do
     counts <- runTestTT (test [
             convertingCrossTest,
-			achievingVictoryTest,
-			detectFullBoardTest,
-			seeCirclesVictoryTest
+            achievingVictoryTest,
+            detectFullBoardTest,
+            seeCirclesVictoryTest,
+            tests
             ])
     if (errors counts + failures counts == 0)
         then exitSuccess
@@ -31,3 +32,9 @@ detectFullBoardTest = TestCase $ assertEqual "This shouldn't work!" Nothing (sen
 
 seeCirclesVictoryTest :: Test
 seeCirclesVictoryTest = TestCase $ assertEqual "But the circles won!" CircleWon (seeGameStatus(listArray ((0,0),(2,2)) [Cross, Empty, Circle, Cross, Circle, Empty, Circle, Empty, Empty]))
+
+tests = TestList [ "test boasrdToString"   ~: ",,,,,,,\n| | | |\n| | | |\n| | | |\n'''''''" ~=? (boardToString newBoard)
+                 , "test firstEmptyPlace"  ~: (0,1) ~=? firstEmptyPlace (listArray ((0,0),(2,2)) [Cross, Empty, Circle, Cross, Circle, Empty, Circle, Empty, Empty])
+                 , "test otherPlayersField" ~: Cross ~=? otherPlayersField Circle
+                 , "test oneDimIndexToTwoDim" ~: (1,1) ~=? oneDimIndexToTwoDim 4
+                 ]
