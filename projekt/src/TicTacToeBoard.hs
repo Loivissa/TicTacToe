@@ -1,4 +1,4 @@
-module TicTacToeBoard (convertFieldToString, boardToString, next, eliminate, help) where
+module TicTacToeBoard (convertFieldToString, boardToString, eliminate, help, eliminate2) where
 import TicTacToeEngine
 import Data.Array
 
@@ -16,11 +16,13 @@ boardToString b = ",,,,,,,\n" ++ "|" ++ (convertFieldToString (b!(0,0))) ++ "|" 
 help :: String
 help = ",,,,,,,\n|0|1|2|\n|3|4|5|\n|6|7|8|\n'''''''"
 
-readCord :: String -> Integer
-readCord cord = 
-
 
 -- | @eliminate@ converts @Maybe@ @Board@ into @Board@. If the @Board@ is @Nothing@ returns @newBoard@ (See @newBoard@)
 eliminate :: Maybe Board -> Board
 eliminate Nothing = newBoard
 eliminate (Just a) = a
+
+-- | @eliminate2@ converts @Maybe@ @Int@ int @Int@
+eliminate2 :: Maybe Int -> Int
+eliminate2 (Just a) = a
+eliminate2 _ = 1
