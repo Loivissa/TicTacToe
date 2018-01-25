@@ -4,6 +4,7 @@ import TicTacToePlayer
 import Data.Array
 import TicTacToeBoard
 
+
 playAGame :: IO()
 playAGame = do
  putStrLn "Welcome!"
@@ -31,7 +32,7 @@ gameLoop 1 f1 mod1 board11 = do
  putStrLn ("You are playing as " ++ (convertFieldToString f1))
  putStrLn help
  coordinates <-getLine
- let place = (read coordinates :: Int)
+ let place = readCord coordinates
  let board2 = makeAMove board11 f1 (oneDimIndexToTwoDim place)
  let board3 = eliminate (board2)
  if (board2 == Nothing)

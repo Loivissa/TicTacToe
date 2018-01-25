@@ -3,6 +3,7 @@ import TicTacToeEngine
 import Data.Maybe
 import Data.Array
 
+
 isGameFinished :: Board -> Bool
 isGameFinished board = ((seeGameStatus board) /= InProgress)
 
