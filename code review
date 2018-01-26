@@ -1,0 +1,15 @@
+Reviewing code from https://github.com/pswedrak/Fraktal  
+  
+The reviewed project consists of code drawing fractals, based on user input specifying some properties of drawn figure, such as its size, the angles of lines and a number of iterations. Its way of drawing fractals resembles in some ways the logic of Logo, because the String describing the figure is constructed a bit like an instruction for an invisible turtle - how long a line should be, how to change angle during drawing etc.  
+  
+It's working properly; apart from a lot of manual testing, the creators provided a surprisngly great amount of HUnit tests for every function they had written, which all work. The heart of the project - the function creating a String serving as a set of instructions - is constructed recursively, which means a very short (therefore easy to check) code.   
+  
+Overally, the code is very short - which means that there's not a lot of functions to read and check. Perhaps it would be more interesting if a String with instructions was generated in more complicated ways than just recursion on one pattern, or if some examples were provided that would show the more interesting possibilities of generated fractals.  
+  
+The comments are mostly extensive, with an exception of the angle: startAngle is said to be in radians, and the only thing indicating that the user should give the angle in degrees is in code:
+  
+putStrLn "Change angle [DEG]: "  
+  
+which doesn't help when reading the documentation and gives an impression that the angle should be given in radians if one reads the code before starting the program.
+
+The I/O part of the program isn't safe: for example, if a user tries to give a letter instead of a number, program throws errors and closes instead of, let's say, asking for a proper input. Only the instruction-giving String is checked for proper characters - but it also ends a program instead of trying to remedy the situation. 
