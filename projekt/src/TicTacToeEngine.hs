@@ -20,7 +20,7 @@ instance Eq Field where
  Circle == Circle = True
  _ == _ = False
 
- -- | @GameStatus@ is a variable describing the state of the game - did it end or not and what is a result? @InProgress@ indicates that the game hasn't ended yet. @CircleWon@, @CrossWon@ an @Stalemate@ indicate both the fact that the game has ended and the result.
+-- | @GameStatus@ is a variable describing the state of the game - did it end or not and what is a result? @InProgress@ indicates that the game hasn't ended yet. @CircleWon@, @CrossWon@ an @Stalemate@ indicate both the fact that the game has ended and the result.
 data GameStatus = InProgress | CrossWon | CircleWon | Stalemate deriving(Show)
 instance Eq GameStatus where
  InProgress == InProgress = True
@@ -29,7 +29,7 @@ instance Eq GameStatus where
  Stalemate == Stalemate = True
  _ == _ = False
 
- -- | @Board@ represents the board for the Tic Tac Toe game. Starting board is represented by @newBoard@, which is an empty 3x3 Tic Tac Toe board. It's rows and columns are numbered from 0 to 2. Those numbers are used to specify where do you want to move. (See @makeAMove@ for the exact way to specify where do you want to place your mark)
+-- | @Board@ represents the board for the Tic Tac Toe game. Starting board is represented by @newBoard@, which is an empty 3x3 Tic Tac Toe board. It's rows and columns are numbered from 0 to 2. Those numbers are used to specify where do you want to move. (See @makeAMove@ for the exact way to specify where do you want to place your mark)
 type Board = Array (Int,Int) Field
 
 newBoard = listArray ((0,0),(2,2)) [Empty, Empty, Empty, Empty, Empty, Empty, Empty, Empty, Empty]

@@ -41,11 +41,11 @@ firstEmptyPlace board = oneDimIndexToTwoDim (oneDimIndex board)
  loop (a:at) acc = if (a==Empty) then acc else loop at (acc+1)
  oneDimIndex board = loop (elems board) 0
 
- -- | @lazilyDecideHowToMove@ takes a @Board@ and a @Field@ representing whether it is a @Cross@ or a @Circle@ move. It returns a new @Board@ after making a first possible move - either as a @Just Board@ or @Nothing@ if there is no possible move.
+-- | @lazilyDecideHowToMove@ takes a @Board@ and a @Field@ representing whether it is a @Cross@ or a @Circle@ move. It returns a new @Board@ after making a first possible move - either as a @Just Board@ or @Nothing@ if there is no possible move.
 lazilyDecideHowToMove :: Field -> Board -> Maybe Board
 lazilyDecideHowToMove f board = makeAMove board f (firstEmptyPlace board)
 
- -- | @sensiblyDecideHowToMove@ takes a @Board@ and a @Field@ representing whether it is a @Cross@ or a @Circle@ move. It returns a new @Board@ (either as a @Just Board@ or @Nothing@ if there is no possible move) after making a move that should either seize victory if it's immediately available, prevent the enemy from doing the same or - if none of those are available - simply places a required @Cross@ or @Circle@ in the first possible place.
+-- | @sensiblyDecideHowToMove@ takes a @Board@ and a @Field@ representing whether it is a @Cross@ or a @Circle@ move. It returns a new @Board@ (either as a @Just Board@ or @Nothing@ if there is no possible move) after making a move that should either seize victory if it's immediately available, prevent the enemy from doing the same or - if none of those are available - simply places a required @Cross@ or @Circle@ in the first possible place.
 sensiblyDecideHowToMove :: Field -> Board -> Maybe Board
 sensiblyDecideHowToMove f board =
  if((findColumnWithOneWindow f board) /= Nothing) --check if you can win by getting 3 in the row in a column...

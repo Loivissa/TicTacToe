@@ -37,7 +37,7 @@ playAGame = do
 
 
 
-  -- | @gameLoop@ handles game between player and computer. First instance interprets players intentions. Second makes moves as computer.
+-- | @gameLoop@ handles game between player and computer. First instance interprets players intentions. Second makes moves as computer.
 gameLoop :: Int -> Field -> Int -> Board -> IO()
 gameLoop 1 f1 mod1 board11 = do
  putStrLn "Where?"
