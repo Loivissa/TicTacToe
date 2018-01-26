@@ -177,7 +177,7 @@
 #endif /* MIN_TOOL_VERSION_strip */
 
 #ifndef CURRENT_COMPONENT_ID
-#define CURRENT_COMPONENT_ID "projekt-0.1.0.0-BNd8mowBzcuEvbei0Kg3OS-projekt-exe"
+#define CURRENT_COMPONENT_ID "projekt-0.1.0.0-5POakvJ2jNtEMu6clIzcxr-projekt-exe"
 #endif /* CURRENT_COMPONENT_ID */
 #ifndef CURRENT_PACKAGE_VERSION
 #define CURRENT_PACKAGE_VERSION "0.1.0.0"
