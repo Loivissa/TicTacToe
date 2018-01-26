@@ -6,6 +6,7 @@ import TicTacToeBoard
 import System.Exit
 import Data.Maybe
 import Data.Array
+import Test.QuickCheck
 
 main :: IO ()
 main = do
@@ -19,6 +20,7 @@ main = do
     if (errors counts + failures counts == 0)
         then exitSuccess
         else exitFailure
+	quickCheck inProgressTest
 
 
 convertingCrossTest :: Test
@@ -38,3 +40,6 @@ tests = TestList [ "test boasrdToString"   ~: ",,,,,,,\n| | | |\n| | | |\n| | | 
                  , "test otherPlayersField" ~: Cross ~=? otherPlayersField Circle
                  , "test oneDimIndexToTwoDim" ~: (1,1) ~=? oneDimIndexToTwoDim 4
                  ]
+
+inProgressTest :: Field -> Field -> Bool
+inProgressTest f1 f2 = (seeGameStatus(eliminate(lazilyDecideHowToMove(f1)(newBoard))) == seeGameStatus(eliminate(lazilyDecideHowToMove(f2)(newBoard))))
