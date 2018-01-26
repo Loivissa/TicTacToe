@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2018-01-26 18:01:55.2189557 UTC
+2018-01-26 18:39:22.046702 UTC
 
 interface main:Main 8022
-  interface hash: ab23cc889f53f8d86f2c4c4fd05065ed
-  ABI hash: 1fe829845862fb6beab9bb1966d2cd95
+  interface hash: b1ca60cf455de5a972b9a5af627e79dd
+  ABI hash: 52b880807bca4ec658f859be839751ad
   export-list hash: f4464add937ba24a43bfd683b6bda58f
   orphan hash: 94f5d961b293033ef5916167713a2849
   flag hash: 29b15d34e3f754b83470dcfec918a4bf
@@ -3477,12 +3477,12 @@ c963864ec5a0a461098148229cc3aa53
                    ww2
                    ww3
                    w1) -}
-fe941b2ca1143acf95542838e9e1d22e
+d47b435faffc40dcd42f50092f4c2093
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-42581660e51805abab38e19581091b0d
+aae778316993337a574dc92166f8ca98
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -3505,14 +3505,14 @@ fe941b2ca1143acf95542838e9e1d22e
                              ipv of ds4 { (#,#) ipv2 ipv3 ->
                       Main.main2 ipv2 ipv3 }
                    0# -> Main.main2 ipv counts' } } } } }) -}
-da709846636eda9836e0ef82ff053204
+388b9e1359186879c5654f85d45eebba
   main10 :: [Test.HUnit.Base.Test]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.HUnit.Base.Test
                    Main.main47
                    Main.main11) -}
-26a4047ab1423110df800f61f0c97204
+4216ff256973479dbae1fad2228e58aa
   main100 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -3520,14 +3520,14 @@ da709846636eda9836e0ef82ff053204
      Unfolding: (GHC.TopHandler.runMainIO1
                    @ ()
                    Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
-2ccc54f6b8ed72be258d93867be3bf19
+4a26d6dacd4c2b3419bcd009dc9fbe93
   main11 :: [Test.HUnit.Base.Test]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.HUnit.Base.Test
                    Main.main37
                    Main.main12) -}
-be11fc22332317d9c58b30d3f8e95af3
+f900f027989ea3aa1b57dd4fff1a4515
   main12 :: [Test.HUnit.Base.Test]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
@@ -3563,7 +3563,7 @@ eb59e2fab4c9d76f98ae3ad5e2abf5ba
 ebdbb1bdcaabd297221d168cf7aeefeb
   main18 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("test oneDimIndexToTwoDim"#) -}
-6619c9b42b9da0650ac44ea7e061b270
+d5d40c8432eb938afd8b8759415fbc23
   main19 :: Test.HUnit.Base.Test
   {- Strictness: m3,
      Unfolding: (Test.HUnit.Base.TestLabel Main.main35 Main.main20) -}
@@ -3573,12 +3573,12 @@ ebdbb1bdcaabd297221d168cf7aeefeb
     -> Test.HUnit.Base.Counts
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 2, Strictness: <S,U><L,1*U(A,A,1*U(U),1*U(U))> -}
-e203142dbe0f721d91906ec2a288c319
+028d3107f7ae07c709fad2e9970dfc3a
   main20 :: Test.HUnit.Base.Test
   {- Strictness: m1,
      Unfolding: (Test.HUnit.Base.TestCase
                    Main.main21 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
-1944e6765fc1fd5d5c01542c7d552bea
+52d0ff05c186a0a5c42d05e8c78bc024
   main21 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -3596,28 +3596,28 @@ e203142dbe0f721d91906ec2a288c319
                    TicTacToeEngine.Cross
                    TicTacToeEngine.Cross
                    eta2) -}
-8aa37b7c9e30bfb7404f3bc621f2e5d9
+05624397178088fbe8973c5aaad2f0e4
   main22 :: GHC.Stack.Types.CallStack
   {- Strictness: m2,
      Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.HUnit.Base.@=?6
                    Test.HUnit.Base.@=?2
                    Main.main23) -}
-5a0cfc6c87bbe18fd637563aa06282da
+6958173ec9c292b5b60de02bc3ab40b9
   main23 :: GHC.Stack.Types.CallStack
   {- Strictness: m2,
      Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.HUnit.Base.~=?4
                    Test.HUnit.Base.~=?1
                    Main.main24) -}
-1b12963da92f490ff5ee9bcd66a83802
+93daeeb97bfc7ffb0c0d5a074b9571f5
   main24 :: GHC.Stack.Types.CallStack
   {- Strictness: m2,
      Unfolding: (GHC.Stack.Types.PushCallStack
                    Main.main33
                    Main.main25
                    GHC.Stack.Types.EmptyCallStack) -}
-2640dec92e59f852d12c76972e377fb6
+81fe08fea8657e33eef0a066f53b68e0
   main25 :: GHC.Stack.Types.SrcLoc
   {- Strictness: m,
      Unfolding: (GHC.Stack.Types.SrcLoc
@@ -3634,13 +3634,13 @@ a10448b80df8777c437a146d3dac7b22
 03012c084509c01c1748c2e2505371d9
   main27 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 48#) -}
-e1d852a77578f5d491f3e3057e3e28ed
+401738345796365a1a2aefa366c208e1
   main28 :: GHC.Types.Int
-  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 41#) -}
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 42#) -}
 a8abf90858e733e851eba10f398180c7
   main29 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# Main.main30) -}
-4b86d444c2698e9ad3166ce34868f4c5
+1fa18a295bc0900e5230c8616fe70332
   main3 :: Test.HUnit.Base.Test
   {- Strictness: m2,
      Unfolding: (Test.HUnit.Base.TestList Main.main4) -}
@@ -3689,12 +3689,12 @@ f69cf0b5944c96ffb36d2bcec6764feb
                       case x1 of wild3 {
                         DEFAULT -> Main.main40 eta2
                         1# -> (# eta2, GHC.Tuple.() #) } } } } }) -}
-6417a6c2ee19286bb2eda85f36cdedc9
+71a4f1cdeaba4e9c38bccca0717de52a
   main4 :: [Test.HUnit.Base.Test]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.HUnit.Base.Test
-                   Main.main89
+                   Main.main90
                    Main.main5) -}
 75546f1edbc4b62f5c1cd41ee6e3d65b
   main40 ::
@@ -3832,12 +3832,12 @@ af9bfa9a06edd5d25bf4ec8ddfde235b
                  case GHC.Base.eqString Main.main_eta4 Main.main_eta1 of wild {
                    GHC.Types.False -> Main.main50 eta2
                    GHC.Types.True -> (# eta2, GHC.Tuple.() #) }) -}
-260d3246c93cb023c67cd7332bb17f11
+a99da3b99f2c5c1593abd4466e79f575
   main5 :: [Test.HUnit.Base.Test]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.HUnit.Base.Test
-                   Main.main77
+                   Main.main78
                    Main.main6) -}
 b510a0f2cb4a89a920942e38de4205fe
   main50 ::
@@ -3858,12 +3858,12 @@ b510a0f2cb4a89a920942e38de4205fe
 42eecb44ca8d3500aed95755cc8c2732
   main53 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("test boasrdToString"#) -}
-82d843f2a819a8df396de170a900297e
+1299d73383f933f2bb23b8964758bbeb
   main54 :: Test.HUnit.Base.Test
   {- Strictness: m1,
      Unfolding: (Test.HUnit.Base.TestCase
                    Main.main55 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
-e65b13ceaf2f2281f5a2d7c86d81fec4
+1ae364f70c412d05e7d5d18f1f48c41d
   main55 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -3892,14 +3892,14 @@ e65b13ceaf2f2281f5a2d7c86d81fec4
                            Main.main56)
                         eta3 } } }
                    TicTacToeEngine.CircleWon -> (# eta3, GHC.Tuple.() #) }) -}
-6a1c5c8d056535b7fcea5fd80a103b32
+2d09f3dacf4026041e4b36bdc5ea1068
   main56 :: GHC.Stack.Types.CallStack
   {- Strictness: m2,
      Unfolding: (GHC.Stack.Types.PushCallStack
                    Main.main61
                    Main.main57
                    GHC.Stack.Types.EmptyCallStack) -}
-063087bec6a351be160aace742c77a51
+cf0e5094fdab1c32a1723b56d49aad5f
   main57 :: GHC.Stack.Types.SrcLoc
   {- Strictness: m,
      Unfolding: (GHC.Stack.Types.SrcLoc
@@ -3916,16 +3916,16 @@ e65b13ceaf2f2281f5a2d7c86d81fec4
 7c554cb7c6845a71b5c10dd52d6923ec
   main59 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 36#) -}
-f3cb42df154c0de5632653b215dd7b1c
+a80073d07cac5834eb8856024612ad43
   main6 :: [Test.HUnit.Base.Test]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.HUnit.Base.Test
                    Main.main66
                    Main.main7) -}
-a29a800fa3adc63f56cea6ce6d3dc89d
+15bf1d2798e1bd3e4ebd1260a93aaa73
   main60 :: GHC.Types.Int
-  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 37#) -}
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 38#) -}
 26e812b4a6599e0750c4d177d1ae56d5
   main61 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# Main.main62) -}
@@ -3941,21 +3941,21 @@ c9f6a12758d977321eaedddecc921691
 1084e09bb2de7bef1a5f60735c43dc40
   main65 :: TicTacToeEngine.GameStatus
   {- Unfolding: (TicTacToeEngine.seeGameStatus Main.main41) -}
-a6b7d2cd3abe32b785902df25510975a
+21a2e99aa64213a4f63d9b1d12925223
   main66 :: Test.HUnit.Base.Test
   {- Strictness: m1,
      Unfolding: (Test.HUnit.Base.TestCase
                    Main.main67 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
-4103f308885ca483bd6d4b11923aa7c2
+912ffe77c5e94fd612a3901ebd89fcd1
   main67 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
-                 case Main.main74 of wild {
+                 case Main.main75 of wild {
                    GHC.Base.Nothing -> (# eta3, GHC.Tuple.() #)
                    GHC.Base.Just a1
-                   -> case Test.HUnit.Lang.assertEqual_go Main.main72 of wild2 { () ->
+                   -> case Test.HUnit.Lang.assertEqual_go Main.main73 of wild2 { () ->
                       case Test.HUnit.Lang.assertEqual_go
                              GHC.Show.$fShowMaybe4 of wild3 { () ->
                       let {
@@ -3984,32 +3984,32 @@ a6b7d2cd3abe32b785902df25510975a
                       case Test.HUnit.Lang.assertEqual_go actualMsg3 of wild1 { () ->
                       Test.HUnit.Lang.assertEqual12
                         GHC.Show.$fShowMaybe4
-                        (GHC.Base.Just @ GHC.Base.String Main.main72)
+                        (GHC.Base.Just @ GHC.Base.String Main.main73)
                         actualMsg3
                         (GHC.Stack.Types.PushCallStack
                            Test.HUnit.Lang.assertEqual10
                            Test.HUnit.Lang.assertEqual2
                            Main.main68)
                         eta3 } } } }) -}
-cef6ca81b71f98de976e0603078d57a4
+87075ff61e881dadf0f5787273932f99
   main68 :: GHC.Stack.Types.CallStack
   {- Strictness: m2,
      Unfolding: (GHC.Stack.Types.PushCallStack
                    Main.main61
                    Main.main69
                    GHC.Stack.Types.EmptyCallStack) -}
-220e5781778333ac284c9591a12ac380
+023b063e9bfe76aa8be80179ad6034c1
   main69 :: GHC.Stack.Types.SrcLoc
   {- Strictness: m,
      Unfolding: (GHC.Stack.Types.SrcLoc
                    Main.main32
                    Main.main31
                    Main.main29
+                   Main.main72
                    Main.main71
-                   Main.main71
-                   Main.main71
+                   Main.main72
                    Main.main70) -}
-f477b8aa2bbb172228ba8445d964f0ef
+ba7cf7969a714a90a1487316e3d461a0
   main7 :: [Test.HUnit.Base.Test]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
@@ -4022,29 +4022,32 @@ f477b8aa2bbb172228ba8445d964f0ef
 d352b34842d9d2d5eeacb60a68a74ebb
   main71 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 34#) -}
-cc0a0303716ab6fd7afdf02214cf0ef9
-  main72 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Main.main73) -}
-ee4be9fa84759a3eb03ca1e4ebca7cc6
-  main73 :: GHC.Prim.Addr#
+7091f995823e627e5368b373a0b371b8
+  main72 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 35#) -}
+64c308618ace51ebb95b01b7a7a195ff
+  main73 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main74) -}
+f3a2b086ae3400f684da9a695f84292c
+  main74 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("This shouldn't work!"#) -}
-6c8d7049a7e0d991cf9fcacc54dc9c4a
-  main74 :: GHC.Base.Maybe TicTacToeEngine.Board
+4721802e38ade123d2d0bea41477dbcb
+  main75 :: GHC.Base.Maybe TicTacToeEngine.Board
   {- Unfolding: (TicTacToePlayer.sensiblyDecideHowToMove
                    TicTacToeEngine.Cross
-                   Main.main75) -}
-db5aa7ec1380e491c50c17c5778c3fef
-  main75 :: TicTacToeEngine.Board
+                   Main.main76) -}
+fff9defd37aa7bdd4e0cc63683e533c8
+  main76 :: TicTacToeEngine.Board
   {- Unfolding: (case GHC.Magic.runRW#
                         @ ('GHC.Types.TupleRep
                              '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
                         @ (# GHC.Prim.State# GHC.Prim.RealWorld,
                              GHC.Arr.Array
                                (GHC.Types.Int, GHC.Types.Int) TicTacToeEngine.Field #)
-                        Main.main76 of ds1 { (#,#) ipv ipv1 ->
+                        Main.main77 of ds1 { (#,#) ipv ipv1 ->
                  ipv1 }) -}
-e8f19e55d3a68d44855b7335483790be
-  main76 ::
+f6d415aa057053423ee4de297c80036e
+  main77 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
           GHC.Arr.Array
@@ -4134,20 +4137,20 @@ e8f19e55d3a68d44855b7335483790be
                       Main.main_u
                       9#
                       ipv3 #) } } } } } } } } } } }) -}
-a77eb33e37295a2fa36d55b184512cfe
-  main77 :: Test.HUnit.Base.Test
+5d73469071c7ccd03a14a77695ad1f9e
+  main78 :: Test.HUnit.Base.Test
   {- Strictness: m1,
      Unfolding: (Test.HUnit.Base.TestCase
-                   Main.main78 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
-db802b4706abe862f74d39590d0e393b
-  main78 ::
+                   Main.main79 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+0659e188a32f12359bad3ede6ad158e7
+  main79 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
-                 case Main.main85 of wild {
+                 case Main.main86 of wild {
                    DEFAULT
-                   -> case Test.HUnit.Lang.assertEqual_go Main.main83 of wild2 { () ->
+                   -> case Test.HUnit.Lang.assertEqual_go Main.main84 of wild2 { () ->
                       case Test.HUnit.Lang.assertEqual_go
                              TicTacToeEngine.$fShowGameStatus5 of wild3 { () ->
                       let {
@@ -4160,73 +4163,73 @@ db802b4706abe862f74d39590d0e393b
                       case Test.HUnit.Lang.assertEqual_go actualMsg3 of wild1 { () ->
                       Test.HUnit.Lang.assertEqual12
                         TicTacToeEngine.$fShowGameStatus5
-                        (GHC.Base.Just @ GHC.Base.String Main.main83)
+                        (GHC.Base.Just @ GHC.Base.String Main.main84)
                         actualMsg3
                         (GHC.Stack.Types.PushCallStack
                            Test.HUnit.Lang.assertEqual10
                            Test.HUnit.Lang.assertEqual2
-                           Main.main79)
+                           Main.main80)
                         eta3 } } }
                    TicTacToeEngine.CrossWon -> (# eta3, GHC.Tuple.() #) }) -}
-14e783ed2da8b97542cb7c9923b065fc
-  main79 :: GHC.Stack.Types.CallStack
-  {- Strictness: m2,
-     Unfolding: (GHC.Stack.Types.PushCallStack
-                   Main.main61
-                   Main.main80
-                   GHC.Stack.Types.EmptyCallStack) -}
-47ec3e60343c5fbf5011d8d878cb513e
+7a2d532654651ed308777d6621be100f
   main8 :: [Test.HUnit.Base.Test]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ Test.HUnit.Base.Test
                    Main.main9
                    (GHC.Types.[] @ Test.HUnit.Base.Test)) -}
-e2c13951061549274e96f961b92dfda2
-  main80 :: GHC.Stack.Types.SrcLoc
+7ab8106d9c014fd01cd4126e8e2aaa60
+  main80 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   Main.main61
+                   Main.main81
+                   GHC.Stack.Types.EmptyCallStack) -}
+199a7e4425d7800ee2fd8fd9965958d8
+  main81 :: GHC.Stack.Types.SrcLoc
   {- Strictness: m,
      Unfolding: (GHC.Stack.Types.SrcLoc
                    Main.main32
                    Main.main31
                    Main.main29
-                   Main.main82
+                   Main.main83
                    Main.main59
-                   Main.main82
-                   Main.main81) -}
-4fe1337151eb3a00c59c2e264f1d56b1
-  main81 :: GHC.Types.Int
-  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 225#) -}
-9503799faf90ca334c6856ea68296a45
+                   Main.main83
+                   Main.main82) -}
+b8c6967727796d3a776fbc4e50c360ce
   main82 :: GHC.Types.Int
-  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 31#) -}
-1e178fca929b3286623276a5c4d6133c
-  main83 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# Main.main84) -}
-8000d25793904095f21624531afddf28
-  main84 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 225#) -}
+fee7a6fd88336e3a587336740565cefa
+  main83 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 32#) -}
+08361075820d50d240a4c23711e3666b
+  main84 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main85) -}
+0b933677913b818123eeaf0a9ad26062
+  main85 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("That should have been won!"#) -}
-56b1e81edb072a53afc053ca85f73ee8
-  main85 :: TicTacToeEngine.GameStatus
-  {- Unfolding: (TicTacToeEngine.seeGameStatus Main.main86) -}
-a89bbbdefe3fa470945948f8229d6fff
-  main86 :: TicTacToeEngine.Board
+f321531e8fc0a2381edc07ea1f16727e
+  main86 :: TicTacToeEngine.GameStatus
+  {- Unfolding: (TicTacToeEngine.seeGameStatus Main.main87) -}
+9d805b888e9429ede088c7075ac51cd0
+  main87 :: TicTacToeEngine.Board
   {- Unfolding: (case TicTacToePlayer.sensiblyDecideHowToMove
                         TicTacToeEngine.Cross
-                        Main.main87 of wild {
+                        Main.main88 of wild {
                    GHC.Base.Nothing -> Data.Maybe.fromJust1 @ TicTacToeEngine.Board
                    GHC.Base.Just x -> x }) -}
-37588b17befda059cc0fddd499c89df4
-  main87 :: TicTacToeEngine.Board
+b7fe2acd6f9b61544d92f2bf8305ce2e
+  main88 :: TicTacToeEngine.Board
   {- Unfolding: (case GHC.Magic.runRW#
                         @ ('GHC.Types.TupleRep
                              '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
                         @ (# GHC.Prim.State# GHC.Prim.RealWorld,
                              GHC.Arr.Array
                                (GHC.Types.Int, GHC.Types.Int) TicTacToeEngine.Field #)
-                        Main.main88 of ds1 { (#,#) ipv ipv1 ->
+                        Main.main89 of ds1 { (#,#) ipv ipv1 ->
                  ipv1 }) -}
-912c690bc20d2b4e2db132be2796c89c
-  main88 ::
+3c86e5bca6f9425d8a09013730c7154c
+  main89 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
           GHC.Arr.Array
@@ -4316,17 +4319,17 @@ a89bbbdefe3fa470945948f8229d6fff
                       Main.main_u
                       9#
                       ipv3 #) } } } } } } } } } } }) -}
-8a5b61bc2113edf86271513922a05760
-  main89 :: Test.HUnit.Base.Test
-  {- Strictness: m1,
-     Unfolding: (Test.HUnit.Base.TestCase
-                   Main.main90 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
-26fc4779eb257a7cb821a2dbbb21aa8e
+ade66c2ffe7f3122efa0c16e9effec90
   main9 :: Test.HUnit.Base.Test
   {- Strictness: m2,
      Unfolding: (Test.HUnit.Base.TestList Main.main10) -}
-b486984a56bd5ab2221dfd2e4c0e18f7
-  main90 ::
+fcb6f1200f018fe3e161243cb0875827
+  main90 :: Test.HUnit.Base.Test
+  {- Strictness: m1,
+     Unfolding: (Test.HUnit.Base.TestCase
+                   Main.main91 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+aa7de43948393921ac6d3e952b0ce2d1
+  main91 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <S,U>,
@@ -4363,36 +4366,33 @@ b486984a56bd5ab2221dfd2e4c0e18f7
                         (GHC.Stack.Types.PushCallStack
                            Test.HUnit.Lang.assertEqual10
                            Test.HUnit.Lang.assertEqual2
-                           Main.main91)
+                           Main.main92)
                         eta3 } } }
                    GHC.Types.True -> (# eta3, GHC.Tuple.() #) }) -}
-a31aaa043845da472883e9882302d057
-  main91 :: GHC.Stack.Types.CallStack
+8996a5bf6763176fb8ffcd283aac7da1
+  main92 :: GHC.Stack.Types.CallStack
   {- Strictness: m2,
      Unfolding: (GHC.Stack.Types.PushCallStack
                    Main.main61
-                   Main.main92
+                   Main.main93
                    GHC.Stack.Types.EmptyCallStack) -}
-4332736eb7532d2f4cd28ac45d1a86d4
-  main92 :: GHC.Stack.Types.SrcLoc
+da6243c8df2c6e33f37875fa300934ac
+  main93 :: GHC.Stack.Types.SrcLoc
   {- Strictness: m,
      Unfolding: (GHC.Stack.Types.SrcLoc
                    Main.main32
                    Main.main31
                    Main.main29
                    Main.main95
-                   Main.main94
+                   Main.main72
                    Main.main95
-                   Main.main93) -}
-0abb6c753bf6c1f4f43a6bed346fe09d
-  main93 :: GHC.Types.Int
-  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 100#) -}
-f1c8116cbe72da2dfed34e1178060005
+                   Main.main94) -}
+83ad1854d199acb8d6f5c95db36ca860
   main94 :: GHC.Types.Int
-  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 35#) -}
-7e745565c2b8e566788af5d8a71ac78b
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 100#) -}
+3f17ea2f73999068da8677d59bbc063a
   main95 :: GHC.Types.Int
-  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 28#) -}
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 29#) -}
 89f3f0edc64fed4220cc3da549786df7
   main96 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# Main.main97) -}

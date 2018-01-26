@@ -19,6 +19,7 @@ main = do
             ])
     quickCheck inProgressTest
     quickCheck cannotPutIntoFullBoardTest
+    quickCheck firstEmptyPlaceTest
     if (errors counts + failures counts == 0)
         then exitSuccess
         else exitFailure
@@ -48,7 +49,7 @@ fieldToBool _ = True
 
 boolToField:: Bool -> Field
 boolToField True = Cross
-boolToField False = Circle				 
+boolToField False = Circle
  
 inProgressTest :: Bool -> Bool -> Bool
 inProgressTest b1 b2 = (seeGameStatus(eliminate(lazilyDecideHowToMove(boolToField(b1))(newBoard))) == seeGameStatus(eliminate(lazilyDecideHowToMove(boolToField(b2))(newBoard))))
@@ -62,3 +63,7 @@ intsToBoard a b c d e f g h i = listArray ((0,0),(2,2)) [intToField a, intToFiel
 
 cannotPutIntoFullBoardTest :: Int -> Int -> Int -> Int -> Int -> Int -> Int -> Int -> Int -> Int -> Int -> Int -> Int -> Int -> Int -> Int -> Int -> Int -> Bool
 cannotPutIntoFullBoardTest a b c d e f g h i j k l m n o p q r = (eliminate(makeAMove (intsToBoard a b c d e f g h i) Cross (0,0)) == eliminate(makeAMove (intsToBoard j k l m n o p q r) Cross (0,0)))
+
+
+firstEmptyPlaceTest:: Int -> Int -> Bool
+firstEmptyPlaceTest a b = (firstEmptyPlace (eliminate(makeAMove newBoard (intToField b) (0,0))) == firstEmptyPlace (eliminate(makeAMove newBoard (intToField b) (0,0))))

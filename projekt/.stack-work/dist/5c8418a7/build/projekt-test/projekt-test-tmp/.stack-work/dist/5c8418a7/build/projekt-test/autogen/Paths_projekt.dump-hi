@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2018-01-26 17:59:54.3661201 UTC
+2018-01-26 18:39:22.4650197 UTC
 
 interface main:Paths_projekt 8022
-  interface hash: 8f7921e5eca2412cc7e3a260d9d2ab03
-  ABI hash: 85ea978a7c60b117afadeb2af91d9ac2
+  interface hash: 11b9afa311e2caacf121ebd90e7eb712
+  ABI hash: d87f40bc61f5d41a957769d42e03c6fa
   export-list hash: 4806d98298f3ccbb973e3a33eca3e1a1
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 30743392119462bd90d963a3318c8730
@@ -60,14 +60,14 @@ c8a7a9e238b63b6f688e9616f20473ed
 8e7de03c036f2c7654bdff1af0597c68
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("main"#) -}
-a841c436197bfae394f7650f49ab007d
+4540def9aff61e00de6f1a0089d63ff8
   getBinDir :: GHC.Types.IO GHC.IO.FilePath
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Paths_projekt.getBinDir1
                   `cast`
                 (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
-78e2d89f824d37732df22259671b2226
+058a2db52318d2e7cf22e2f834d8b369
   getBinDir1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -79,7 +79,7 @@ a841c436197bfae394f7650f49ab007d
                    Paths_projekt.getBinDir5
                    Paths_projekt.getBinDir2
                    eta) -}
-79cdfd79166386ac4a05905d4090dc25
+fe33b5beb3315a0da92d3fb2ba4bce37
   getBinDir2 ::
     GHC.Exception.SomeException
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -106,14 +106,14 @@ a841c436197bfae394f7650f49ab007d
                    GHC.Base.Just ds1
                    -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
                       (# eta, Paths_projekt.getBinDir3 #) } } }) -}
-02372940a1498c2ed63dc13ec4d98f51
+8a4cdbd67ec7aa218d1a5a4f553b7646
   getBinDir3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_projekt.getBinDir4) -}
-0d16c3ebb5facaabdc6eaacdc01c7151
+23060799721a6554676d8e21fe1bec22
   getBinDir4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("D:\\WIEiT\\Funkcyjne\\projekt\\.stack-work\\install\\ccbce92a\\bin"#) -}
+     Unfolding: ("D:\\WIEiT\\Funkcyjne\\.stack-work\\install\\ccbce92a\\bin"#) -}
 d792ceac86d13166169443782ac32a85
   getBinDir5 ::
     GHC.Prim.State# GHC.Prim.RealWorld
@@ -127,14 +127,14 @@ e24cc7ac718d0856693c6fb26af2616d
 33f5b73a8466451fe9ad7ad19e47a727
   getBinDir7 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("projekt_bindir"#) -}
-c71eeee6a79a1ca6237c0f0aaf4972c7
+b58b0248617f8dcfff9a1f4f71b2cb1a
   getDataDir :: GHC.Types.IO GHC.IO.FilePath
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Paths_projekt.getDataDir1
                   `cast`
                 (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
-c1b2e7927495e21fc4a2d22166352619
+32e0e75f948af8e8692953e48ec7f847
   getDataDir1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -146,7 +146,7 @@ c1b2e7927495e21fc4a2d22166352619
                    Paths_projekt.getDataDir5
                    Paths_projekt.getDataDir2
                    eta) -}
-2087273342569f4e5c277e44df1fd58e
+f958bfa415d48be8d7360649cd2c3fc4
   getDataDir2 ::
     GHC.Exception.SomeException
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -173,14 +173,14 @@ c1b2e7927495e21fc4a2d22166352619
                    GHC.Base.Just ds1
                    -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
                       (# eta, Paths_projekt.getDataDir3 #) } } }) -}
-b25f3bfdf4b3fa1745d2c65996fc97c1
+b4b409a9838ef17523d80ccd7067ed8b
   getDataDir3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_projekt.getDataDir4) -}
-ebb2865728d0acafd93ebfeaddefca4c
+4de5c3674c8bcef628e978946b8df427
   getDataDir4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("D:\\WIEiT\\Funkcyjne\\projekt\\.stack-work\\install\\ccbce92a\\share\\x86_64-windows-ghc-8.2.2\\projekt-0.1.0.0"#) -}
+     Unfolding: ("D:\\WIEiT\\Funkcyjne\\.stack-work\\install\\ccbce92a\\share\\x86_64-windows-ghc-8.2.2\\projekt-0.1.0.0"#) -}
 7f97a6bcb6cc9d4e4b9db69377c8fdb7
   getDataDir5 ::
     GHC.Prim.State# GHC.Prim.RealWorld
@@ -195,7 +195,7 @@ ebb2865728d0acafd93ebfeaddefca4c
 f8347bd9697a44487401e9b0967e1dd3
   getDataDir7 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("projekt_datadir"#) -}
-3c93c0a8f220d890b02c093e8faab84b
+38021dca5aa95dcd286aae627f771b40
   getDataFileName :: GHC.IO.FilePath -> GHC.Types.IO GHC.IO.FilePath
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -203,7 +203,7 @@ f8347bd9697a44487401e9b0967e1dd3
                   `cast`
                 (<GHC.IO.FilePath>_R
                  ->_R Sym (GHC.Types.N:IO[0] <GHC.IO.FilePath>_R)) -}
-29bc1699cc9ef06a188396d622b369c7
+92b6643958dbd6df5c6959e73a3634db
   getDataFileName1 ::
     GHC.IO.FilePath
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -227,14 +227,14 @@ f8347bd9697a44487401e9b0967e1dd3
 66243ea97018812724fb8176bd0ddbe4
   getDataFileName2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("\\"#) -}
-63b7d6323b79086ede1be5c22f026581
+c102ed8efe53655727a1c3cc976a31d6
   getDynLibDir :: GHC.Types.IO GHC.IO.FilePath
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Paths_projekt.getDynLibDir1
                   `cast`
                 (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
-9f3126c6bde4bfc90769a550b7a6fb30
+af6c6f0c32fe4813a111ee84e051c6a8
   getDynLibDir1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -246,7 +246,7 @@ f8347bd9697a44487401e9b0967e1dd3
                    Paths_projekt.getDynLibDir5
                    Paths_projekt.getDynLibDir2
                    eta) -}
-2fe78691e01e8adda2ef9d98a1fa9275
+c3071bfcf73dae8facfb3fc52f2c3ea3
   getDynLibDir2 ::
     GHC.Exception.SomeException
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -273,14 +273,14 @@ f8347bd9697a44487401e9b0967e1dd3
                    GHC.Base.Just ds1
                    -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
                       (# eta, Paths_projekt.getDynLibDir3 #) } } }) -}
-3106e5d5d256a5c90c764a3f1beabff9
+940a9fdad013ca07bd4e113a8ea398df
   getDynLibDir3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_projekt.getDynLibDir4) -}
-a70e16e82e579998322bd69ad6754dc0
+af32ee589655af7a6350676ac5c74f29
   getDynLibDir4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("D:\\WIEiT\\Funkcyjne\\projekt\\.stack-work\\install\\ccbce92a\\lib\\x86_64-windows-ghc-8.2.2"#) -}
+     Unfolding: ("D:\\WIEiT\\Funkcyjne\\.stack-work\\install\\ccbce92a\\lib\\x86_64-windows-ghc-8.2.2"#) -}
 cef38a3aad427501a49f1d3756d40490
   getDynLibDir5 ::
     GHC.Prim.State# GHC.Prim.RealWorld
@@ -295,14 +295,14 @@ b12da047c09587af907d2698c2231cd2
 f5e8d380a570303e5f8ff4aacb602243
   getDynLibDir7 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("projekt_dynlibdir"#) -}
-4db03b785044ee54c077f94c3db23d6b
+b8e7cfb26d22754b55b46ff5a4fa1f78
   getLibDir :: GHC.Types.IO GHC.IO.FilePath
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Paths_projekt.getLibDir1
                   `cast`
                 (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
-ad8bd553f5850a6206d462577b49c52a
+2e466fcb79091dc86f55a823ef9614f5
   getLibDir1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -314,7 +314,7 @@ ad8bd553f5850a6206d462577b49c52a
                    Paths_projekt.getLibDir5
                    Paths_projekt.getLibDir2
                    eta) -}
-c099cc8924446bde6a1391b7113e17d6
+16be6874bbd52ece1a998ea6c7f8a162
   getLibDir2 ::
     GHC.Exception.SomeException
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -341,14 +341,14 @@ c099cc8924446bde6a1391b7113e17d6
                    GHC.Base.Just ds1
                    -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
                       (# eta, Paths_projekt.getLibDir3 #) } } }) -}
-cd082c4772e9f9d4204d7f9b86195208
+524e7cf20be7085f4591aaa16ddbb998
   getLibDir3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_projekt.getLibDir4) -}
-b05c589297070897089075e315cf3a48
+3b109d81b8a4c1404006eadfc1192e1e
   getLibDir4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("D:\\WIEiT\\Funkcyjne\\projekt\\.stack-work\\install\\ccbce92a\\lib\\x86_64-windows-ghc-8.2.2\\projekt-0.1.0.0-4l6bw0Mb4J77WNw8ASWVKR-projekt-test"#) -}
+     Unfolding: ("D:\\WIEiT\\Funkcyjne\\.stack-work\\install\\ccbce92a\\lib\\x86_64-windows-ghc-8.2.2\\projekt-0.1.0.0-4l6bw0Mb4J77WNw8ASWVKR-projekt-test"#) -}
 101bc6747d57ffba4c0d85592bb661bd
   getLibDir5 ::
     GHC.Prim.State# GHC.Prim.RealWorld
@@ -362,14 +362,14 @@ b05c589297070897089075e315cf3a48
 1dca76561eae610eeed7b049f87e7405
   getLibDir7 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("projekt_libdir"#) -}
-6a9c6a501635f3af0dd0e64b5b194f7b
+5a28e2e9727b831304b9fbea50207c7e
   getLibexecDir :: GHC.Types.IO GHC.IO.FilePath
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Paths_projekt.getLibexecDir1
                   `cast`
                 (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
-f8639a813caee1e6c2156fad28f1ec78
+678693e949e1fe97a78f5efe92891919
   getLibexecDir1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -381,7 +381,7 @@ f8639a813caee1e6c2156fad28f1ec78
                    Paths_projekt.getLibexecDir5
                    Paths_projekt.getLibexecDir2
                    eta) -}
-28bdbde90b272e3d1cd54378e1f9f1f9
+bb3414edf8c83651b76a00909256cd1f
   getLibexecDir2 ::
     GHC.Exception.SomeException
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -408,14 +408,14 @@ f8639a813caee1e6c2156fad28f1ec78
                    GHC.Base.Just ds1
                    -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
                       (# eta, Paths_projekt.getLibexecDir3 #) } } }) -}
-110e16249931bd85ccae4d54fc967802
+03ce6a38e0dfce7c85fb12e95ceddd0d
   getLibexecDir3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_projekt.getLibexecDir4) -}
-b0dd546528f754f60a8cd20e6e1a2246
+a07c49de72a196c1586fd568677f50cc
   getLibexecDir4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("D:\\WIEiT\\Funkcyjne\\projekt\\.stack-work\\install\\ccbce92a\\libexec\\x86_64-windows-ghc-8.2.2\\projekt-0.1.0.0"#) -}
+     Unfolding: ("D:\\WIEiT\\Funkcyjne\\.stack-work\\install\\ccbce92a\\libexec\\x86_64-windows-ghc-8.2.2\\projekt-0.1.0.0"#) -}
 c16c143a1a49afe4c4d223be8c86a271
   getLibexecDir5 ::
     GHC.Prim.State# GHC.Prim.RealWorld
@@ -430,14 +430,14 @@ c16c143a1a49afe4c4d223be8c86a271
 a659cc8b92957638a55e8242eb02ecbd
   getLibexecDir7 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("projekt_libexecdir"#) -}
-dd25f96dcfcb6efad2c31c3202deaf7c
+c1d6d0c2bee81289777d02e2c2b60ca3
   getSysconfDir :: GHC.Types.IO GHC.IO.FilePath
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Paths_projekt.getSysconfDir1
                   `cast`
                 (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
-36bea2d6019cbb74ee6c3ddd139e83dc
+2d00c6143782ee71c6bac937096ab8bb
   getSysconfDir1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -449,7 +449,7 @@ dd25f96dcfcb6efad2c31c3202deaf7c
                    Paths_projekt.getSysconfDir5
                    Paths_projekt.getSysconfDir2
                    eta) -}
-15078b2f44173cb56c86bffa2d8c8e11
+7a9b499d4cd2af2ccb080cf558ccac76
   getSysconfDir2 ::
     GHC.Exception.SomeException
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -476,14 +476,14 @@ dd25f96dcfcb6efad2c31c3202deaf7c
                    GHC.Base.Just ds1
                    -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
                       (# eta, Paths_projekt.getSysconfDir3 #) } } }) -}
-13edb9da8135588aee7cd70cd772bd2c
+fb27f546300873663337ebdcd45b8fc3
   getSysconfDir3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_projekt.getSysconfDir4) -}
-2b6078c70709d22f4f95664d9b1a5d8c
+66a911b4ee701eccd74d3707490a2d13
   getSysconfDir4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("D:\\WIEiT\\Funkcyjne\\projekt\\.stack-work\\install\\ccbce92a\\etc"#) -}
+     Unfolding: ("D:\\WIEiT\\Funkcyjne\\.stack-work\\install\\ccbce92a\\etc"#) -}
 6fd74f2aa277812901486c8915392785
   getSysconfDir5 ::
     GHC.Prim.State# GHC.Prim.RealWorld
