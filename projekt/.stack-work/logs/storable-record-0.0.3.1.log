@@ -1,0 +1,12 @@
+Configuring storable-record-0.0.3.1...
+Preprocessing library for storable-record-0.0.3.1..
+Building library for storable-record-0.0.3.1..
+[1 of 7] Compiling Foreign.Storable.FixedArray ( src\Foreign\Storable\FixedArray.hs, .stack-work\dist\5c8418a7\build\Foreign\Storable\FixedArray.o )
+[2 of 7] Compiling Foreign.Storable.Newtype ( src\Foreign\Storable\Newtype.hs, .stack-work\dist\5c8418a7\build\Foreign\Storable\Newtype.o )
+[3 of 7] Compiling Foreign.Storable.Record ( src\Foreign\Storable\Record.hs, .stack-work\dist\5c8418a7\build\Foreign\Storable\Record.o )
+[4 of 7] Compiling Foreign.Storable.RecordMinimalSize ( src\Foreign\Storable\RecordMinimalSize.hs, .stack-work\dist\5c8418a7\build\Foreign\Storable\RecordMinimalSize.o )
+[5 of 7] Compiling Foreign.Storable.RecordReaderPtr ( src\Foreign\Storable\RecordReaderPtr.hs, .stack-work\dist\5c8418a7\build\Foreign\Storable\RecordReaderPtr.o )
+[6 of 7] Compiling Foreign.Storable.Traversable ( src\Foreign\Storable\Traversable.hs, .stack-work\dist\5c8418a7\build\Foreign\Storable\Traversable.o )
+[7 of 7] Compiling Foreign.Storable.TraversableUnequalSizes ( src\Foreign\Storable\TraversableUnequalSizes.hs, .stack-work\dist\5c8418a7\build\Foreign\Storable\TraversableUnequalSizes.o )
+Installing library in C:\sr\snapshots\13cecb13\lib\x86_64-windows-ghc-8.2.2\storable-record-0.0.3.1-16Oxamcf8h4LhSQzLyFYAN
+Registering library for storable-record-0.0.3.1..

@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-01-26 11:05:28.9287543 UTC
+2018-01-26 17:51:38.0354415 UTC
 
-interface projekt-0.1.0.0-L2R9sX9EbLN31CCNRW6qUq:TicTacToeGame 8022
-  interface hash: 88ac63f798c5d3be940dfed695c75b2a
-  ABI hash: 428a7e024c2931224d6bf947f965d6d2
-  export-list hash: 509f35bd851c92feba5787d605c05d6d
+interface projekt-0.1.0.0-TBLQXoa90l5P6smpEMzVF:TicTacToeGame 8022
+  interface hash: e8ad5af8366f7d86d0a02e459a51808f
+  ABI hash: d267579972be8bb4287daa494d8e2cae
+  export-list hash: 536edda694cfc41d9003430251f39eb0
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 73bbfb07a2cc198332f47c5c19438df4
   sig of: Nothing
@@ -31,53 +31,53 @@ import  -/  base-4.10.1.0:System.IO 1fb8f1d116df69c8750950ac088a90e6
 import  -/  base-4.10.1.0:Text.Read c150617dda21a009ed26981626bd21d7
 import  -/  ghc-prim-0.5.1.1:GHC.Classes 64ad5910d03ab188ab9b4adef7487b1e
 import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
-import  -/  TicTacToeBoard f39394c8a70bd62fdb5d6c35529b0953
-  exports: 2558faf72ae1040865447d64988b96e5
-  boardToString c5a51d610b9c455e0417b8b5b6ae11e3
-  convertFieldToString 5bcfaa7870c046bab7ed8f8f8f533222
-  eliminate a3295d78e8a6909c3fbedce24aec9b83
-  eliminate2 73c250b5fd1571687cf349b1a4481884
-  help 86fa073b9fb393bd7f1adf9919b0063e
-import  -/  TicTacToeEngine 909995f5ec0e675aac39c47c1257f0ab
-  exports: 4037410c300a2034b44b1bf9e446b1c0
-  Board cdc9ca8fe3ce0d0e3d76e1f010a45a4e
-  Circle e953e5093748c5b431ad2d73946ffd08
-  CircleWon e7095399db3ad01ca7d866c5aedd5ceb
-  Cross 4858f5bda1812586d560b49c2e116b15
-  CrossWon e571e47d45d2f589207bae4f474064da
-  Field d4917fad7dd87b3d2ead74ed280a312b
-  Stalemate faa6d921100ac39d91ad2b05814eafa0
-  makeAMove 2482d6eced4428c06f8ecc51002d2ae4
-  newBoard afb260cff6bef405b7acb4bd7e548a11
-  seeGameStatus cb51075f31a12f8e4fd07d29a8e65288
-import  -/  TicTacToePlayer fdecdc42082f879cc4db25c38a83dd5d
-  exports: 213840aff8cd79d0a89a9138f49076bd
-  lazilyDecideHowToMove 137be80db8606234a87211ae7867018f
-  oneDimIndexToTwoDim a4a080d4afb1865031b0cbb1f857127c
-  otherPlayersField 53a21378d97af1dc4e86d494de9fbd57
-  sensiblyDecideHowToMove 1de09be89d7ce89454d80876531e9214
-86e3129c6db92daeaff76fe2996a1845
+import  -/  TicTacToeBoard 7f780aaf89cb8f8eec8f281f032ea495
+  exports: 83abab9126a137815eb2f96fa8e45ff8
+  boardToString c6fe99e7e4e0e0823cace31de3ac8594
+  convertFieldToString f17f3c8e8770e43e6beaf0f8814358bc
+  eliminate de0cf697a413a503188ee0decb7bbff1
+  eliminate2 f2a59fadbe55b1493fee3c7e08ac7328
+  help be3d0917c9dedb016c3ccf475e665d57
+import  -/  TicTacToeEngine 7e384c135b8536b6e1c100e6357fcedc
+  exports: 4736fcbd7704db449493bcf4c159ceb6
+  Board d416d5ac98acdf9badbc27153b5b0462
+  Circle e04966811c3f26a8d9ae7716f5f3131f
+  CircleWon 11c60d9e5f1a139b47c323347296f3fb
+  Cross cca4d2efcdf0e8a9fd4e7cb0c14671b4
+  CrossWon 99abb8f37456bdc8b6b151cd4e3f6868
+  Field 4694a87e8e72d4dce31bd51757727392
+  Stalemate 4d0ffe4c826b57cbdd105e53a8ee6ab4
+  makeAMove 6110d9c4371e058444d08ef9b37ce836
+  newBoard 7141a3dfe78d198cbd8dd9a218bddd8b
+  seeGameStatus 5167423478462095b9c24146fddee054
+import  -/  TicTacToePlayer 5dad19cd078c8f296953991a938df175
+  exports: 7bba1c8eae892ff93ea8fdc333027025
+  lazilyDecideHowToMove cbadbb40048f4a73cfeb95ecc54f2771
+  oneDimIndexToTwoDim e446df42bf9af005c3e603f566de6fa3
+  otherPlayersField c89486699bab4a0ce5cf382b23866437
+  sensiblyDecideHowToMove 612b0668e0094f7a94536e813d0e4671
+a9df1f30b7ece1b3875809b486d3a7c4
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    TicTacToeGame.$trModule3
                    TicTacToeGame.$trModule1) -}
-cdb1b48b586457c0e43c27d0c2bd2909
+91addabdf453741d298020ce2a1c6f98
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS TicTacToeGame.$trModule2) -}
-5b3bed99dffa1e4cdd0db5c4188e620a
+9dac96e00da8b24c6918daa8d9b30528
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("TicTacToeGame"#) -}
-cc80f6bf7b329aa5eeb47c617c2911e8
+48823e888b03f8f8b44f35d494120ea5
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS TicTacToeGame.$trModule4) -}
-1b721cb12a5e973fb9bb3d21cee4a969
+6f8f6e02b779b28fe0723a4c8faea07f
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("projekt-0.1.0.0-L2R9sX9EbLN31CCNRW6qUq"#) -}
-437c8639ad1750e8e33170ed255b342c
+     Unfolding: ("projekt-0.1.0.0-TBLQXoa90l5P6smpEMzVF"#) -}
+15edcc40b0d8b9f6aaf123e09329f6ac
   $wgameLoop ::
     GHC.Prim.Int#
     -> TicTacToeEngine.Field
@@ -88,7 +88,7 @@ cc80f6bf7b329aa5eeb47c617c2911e8
   {- Arity: 5,
      Strictness: <S,1*U><L,U><L,1*U(U)><L,U(U(U(U),U(U)),U(U(U),U(U)),U,U)><S,U>,
      Inline: [0] -}
-3c182bd72649f46183064e6fd3bb4acb
+4a1bbd47c759335c1527302149718fbb
   gameLoop ::
     GHC.Types.Int
     -> TicTacToeEngine.Field
@@ -105,7 +105,7 @@ cc80f6bf7b329aa5eeb47c617c2911e8
                  ->_R <GHC.Types.Int>_R
                  ->_R <TicTacToeEngine.Board>_R
                  ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
-c61afa504dc0819e948daefa45546581
+bde88b1ceae4163418b4bb2e1094c097
   gameLoop1 ::
     GHC.Types.Int
     -> TicTacToeEngine.Field
@@ -124,12 +124,12 @@ c61afa504dc0819e948daefa45546581
                    (w4 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
                  case w of ww { GHC.Types.I# ww1 ->
                  TicTacToeGame.$wgameLoop ww1 w1 w2 w3 w4 }) -}
-f703d170de0831de6a911014e6c8fee3
+3127f6fd789a937319bbff00bb7aa5ba
   playAGame :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 TicTacToeGame.playAGame1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-28963d000d8969a635e397d49acf7950
+eff85b4dbe277d8adcb8f2ef7ea4ee31
   playAGame1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)

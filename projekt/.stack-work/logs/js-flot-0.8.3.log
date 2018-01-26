@@ -1,0 +1,7 @@
+Configuring js-flot-0.8.3...
+Preprocessing library for js-flot-0.8.3..
+Building library for js-flot-0.8.3..
+[1 of 2] Compiling Paths_js_flot    ( .stack-work\dist\5c8418a7\build\autogen\Paths_js_flot.hs, .stack-work\dist\5c8418a7\build\Paths_js_flot.o )
+[2 of 2] Compiling Language.Javascript.Flot ( Language\Javascript\Flot.hs, .stack-work\dist\5c8418a7\build\Language\Javascript\Flot.o )
+Installing library in C:\sr\snapshots\13cecb13\lib\x86_64-windows-ghc-8.2.2\js-flot-0.8.3-BVv7WjS6mgVJLBMR8vaufn
+Registering library for js-flot-0.8.3..

@@ -1,0 +1,7 @@
+Configuring js-jquery-3.2.1...
+Preprocessing library for js-jquery-3.2.1..
+Building library for js-jquery-3.2.1..
+[1 of 2] Compiling Paths_js_jquery  ( .stack-work\dist\5c8418a7\build\autogen\Paths_js_jquery.hs, .stack-work\dist\5c8418a7\build\Paths_js_jquery.o )
+[2 of 2] Compiling Language.Javascript.JQuery ( Language\Javascript\JQuery.hs, .stack-work\dist\5c8418a7\build\Language\Javascript\JQuery.o )
+Installing library in C:\sr\snapshots\13cecb13\lib\x86_64-windows-ghc-8.2.2\js-jquery-3.2.1-Hsf3Jwb3LY22DKxRKtBs05
+Registering library for js-jquery-3.2.1..

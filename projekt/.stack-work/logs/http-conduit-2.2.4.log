@@ -1,0 +1,8 @@
+Configuring http-conduit-2.2.4...
+Preprocessing library for http-conduit-2.2.4..
+Building library for http-conduit-2.2.4..
+[1 of 3] Compiling Network.HTTP.Client.Conduit ( Network\HTTP\Client\Conduit.hs, .stack-work\dist\5c8418a7\build\Network\HTTP\Client\Conduit.o )
+[2 of 3] Compiling Network.HTTP.Conduit ( Network\HTTP\Conduit.hs, .stack-work\dist\5c8418a7\build\Network\HTTP\Conduit.o )
+[3 of 3] Compiling Network.HTTP.Simple ( Network\HTTP\Simple.hs, .stack-work\dist\5c8418a7\build\Network\HTTP\Simple.o )
+Installing library in C:\sr\snapshots\13cecb13\lib\x86_64-windows-ghc-8.2.2\http-conduit-2.2.4-2qWjk4Tcj2K2ebiCGP6omt
+Registering library for http-conduit-2.2.4..

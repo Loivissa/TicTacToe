@@ -1,0 +1,43 @@
+Configuring socks-0.5.6...
+Preprocessing library for socks-0.5.6..
+Building library for socks-0.5.6..
+[1 of 7] Compiling Network.Socks5.Parse ( Network\Socks5\Parse.hs, .stack-work\dist\5c8418a7\build\Network\Socks5\Parse.o )
+[2 of 7] Compiling Network.Socks5.Types ( Network\Socks5\Types.hs, .stack-work\dist\5c8418a7\build\Network\Socks5\Types.o )
+[3 of 7] Compiling Network.Socks5.Conf ( Network\Socks5\Conf.hs, .stack-work\dist\5c8418a7\build\Network\Socks5\Conf.o )
+[4 of 7] Compiling Network.Socks5.Wire ( Network\Socks5\Wire.hs, .stack-work\dist\5c8418a7\build\Network\Socks5\Wire.o )
+
+Network\Socks5\Wire.hs:15:1: warning: [-Wunused-imports]
+    The import of `Control.Applicative' is redundant
+      except perhaps to import instances from `Control.Applicative'
+    To import instances alone, use: import Control.Applicative()
+   |
+15 | import Control.Applicative
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Network\Socks5\Wire.hs:23:1: warning: [-Wunused-imports]
+    The import of `Network.Socks5.Parse' is redundant
+      except perhaps to import instances from `Network.Socks5.Parse'
+    To import instances alone, use: import Network.Socks5.Parse()
+   |
+23 | import Network.Socks5.Parse as P (anyByte, take)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[5 of 7] Compiling Network.Socks5.Command ( Network\Socks5\Command.hs, .stack-work\dist\5c8418a7\build\Network\Socks5\Command.o )
+
+Network\Socks5\Command.hs:25:1: warning: [-Wunused-imports]
+    The import of `Control.Applicative' is redundant
+      except perhaps to import instances from `Control.Applicative'
+    To import instances alone, use: import Control.Applicative()
+   |
+25 | import Control.Applicative
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[6 of 7] Compiling Network.Socks5.Lowlevel ( Network\Socks5\Lowlevel.hs, .stack-work\dist\5c8418a7\build\Network\Socks5\Lowlevel.o )
+[7 of 7] Compiling Network.Socks5   ( Network\Socks5.hs, .stack-work\dist\5c8418a7\build\Network\Socks5.o )
+
+Network\Socks5.hs:139:1: warning: [-Woverlapping-patterns]
+    Pattern match is redundant
+    In an equation for `resolvePortID': resolvePortID _ = ...
+    |
+139 | resolvePortID _              = error "unsupported unix PortID"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Installing library in C:\sr\snapshots\13cecb13\lib\x86_64-windows-ghc-8.2.2\socks-0.5.6-FVq7xrU1ATIBt8J36kFu0r
+Registering library for socks-0.5.6..

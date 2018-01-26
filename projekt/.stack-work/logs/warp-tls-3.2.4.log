@@ -1,0 +1,6 @@
+Configuring warp-tls-3.2.4...
+Preprocessing library for warp-tls-3.2.4..
+Building library for warp-tls-3.2.4..
+[1 of 1] Compiling Network.Wai.Handler.WarpTLS ( Network\Wai\Handler\WarpTLS.hs, .stack-work\dist\5c8418a7\build\Network\Wai\Handler\WarpTLS.o )
+Installing library in C:\sr\snapshots\13cecb13\lib\x86_64-windows-ghc-8.2.2\warp-tls-3.2.4-CDAEfUIgQSc4sBFZAgOylt
+Registering library for warp-tls-3.2.4..

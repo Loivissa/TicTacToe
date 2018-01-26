@@ -1,0 +1,9 @@
+Configuring cereal-0.5.4.0...
+Preprocessing library for cereal-0.5.4.0..
+Building library for cereal-0.5.4.0..
+[1 of 4] Compiling Data.Serialize.Get ( src\Data\Serialize\Get.hs, .stack-work\dist\5c8418a7\build\Data\Serialize\Get.o )
+[2 of 4] Compiling Data.Serialize.Put ( src\Data\Serialize\Put.hs, .stack-work\dist\5c8418a7\build\Data\Serialize\Put.o )
+[3 of 4] Compiling Data.Serialize.IEEE754 ( src\Data\Serialize\IEEE754.hs, .stack-work\dist\5c8418a7\build\Data\Serialize\IEEE754.o )
+[4 of 4] Compiling Data.Serialize   ( src\Data\Serialize.hs, .stack-work\dist\5c8418a7\build\Data\Serialize.o )
+Installing library in C:\sr\snapshots\13cecb13\lib\x86_64-windows-ghc-8.2.2\cereal-0.5.4.0-J3dBBt5iGIcHZAvdNSHzok
+Registering library for cereal-0.5.4.0..

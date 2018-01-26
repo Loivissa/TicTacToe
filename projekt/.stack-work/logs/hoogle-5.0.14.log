@@ -1,0 +1,38 @@
+Configuring hoogle-5.0.14...
+Preprocessing library for hoogle-5.0.14..
+Building library for hoogle-5.0.14..
+[ 1 of 28] Compiling General.IString  ( src\General\IString.hs, .stack-work\dist\5c8418a7\build\General\IString.o )
+[ 2 of 28] Compiling General.Str      ( src\General\Str.hs, .stack-work\dist\5c8418a7\build\General\Str.o )
+[ 3 of 28] Compiling General.Conduit  ( src\General\Conduit.hs, .stack-work\dist\5c8418a7\build\General\Conduit.o )
+[ 4 of 28] Compiling General.Template ( src\General\Template.hs, .stack-work\dist\5c8418a7\build\General\Template.o )
+[ 5 of 28] Compiling General.Util     ( src\General\Util.hs, .stack-work\dist\5c8418a7\build\General\Util.o )
+[ 6 of 28] Compiling General.Timing   ( src\General\Timing.hs, .stack-work\dist\5c8418a7\build\General\Timing.o )
+[ 7 of 28] Compiling General.Log      ( src\General\Log.hs, .stack-work\dist\5c8418a7\build\General\Log.o )
+[ 8 of 28] Compiling Input.Download   ( src\Input\Download.hs, .stack-work\dist\5c8418a7\build\Input\Download.o )
+[ 9 of 28] Compiling Input.Item       ( src\Input\Item.hs, .stack-work\dist\5c8418a7\build\Input\Item.o )
+[10 of 28] Compiling Input.Haddock    ( src\Input\Haddock.hs, .stack-work\dist\5c8418a7\build\Input\Haddock.o )
+[11 of 28] Compiling Input.Set        ( src\Input\Set.hs, .stack-work\dist\5c8418a7\build\Input\Set.o )
+[12 of 28] Compiling Paths_hoogle     ( .stack-work\dist\5c8418a7\build\autogen\Paths_hoogle.hs, .stack-work\dist\5c8418a7\build\Paths_hoogle.o )
+[13 of 28] Compiling Input.Settings   ( src\Input\Settings.hs, .stack-work\dist\5c8418a7\build\Input\Settings.o )
+[14 of 28] Compiling Input.Reorder    ( src\Input\Reorder.hs, .stack-work\dist\5c8418a7\build\Input\Reorder.o )
+[15 of 28] Compiling Input.Cabal      ( src\Input\Cabal.hs, .stack-work\dist\5c8418a7\build\Input\Cabal.o )
+[16 of 28] Compiling General.Store    ( src\General\Store.hs, .stack-work\dist\5c8418a7\build\General\Store.o )
+[17 of 28] Compiling Output.Types     ( src\Output\Types.hs, .stack-work\dist\5c8418a7\build\Output\Types.o )
+[18 of 28] Compiling Output.Names     ( src\Output\Names.hs, .stack-work\dist\5c8418a7\build\Output\Names.o )
+[19 of 28] Compiling Output.Items     ( src\Output\Items.hs, .stack-work\dist\5c8418a7\build\Output\Items.o )
+[20 of 28] Compiling Action.CmdLine   ( src\Action\CmdLine.hs, .stack-work\dist\5c8418a7\build\Action\CmdLine.o )
+[21 of 28] Compiling General.Web      ( src\General\Web.hs, .stack-work\dist\5c8418a7\build\General\Web.o )
+[22 of 28] Compiling Query            ( src\Query.hs, .stack-work\dist\5c8418a7\build\Query.o )
+[23 of 28] Compiling Output.Tags      ( src\Output\Tags.hs, .stack-work\dist\5c8418a7\build\Output\Tags.o )
+[24 of 28] Compiling Action.Generate  ( src\Action\Generate.hs, .stack-work\dist\5c8418a7\build\Action\Generate.o )
+[25 of 28] Compiling Action.Search    ( src\Action\Search.hs, .stack-work\dist\5c8418a7\build\Action\Search.o )
+[26 of 28] Compiling Action.Server    ( src\Action\Server.hs, .stack-work\dist\5c8418a7\build\Action\Server.o )
+[27 of 28] Compiling Action.Test      ( src\Action\Test.hs, .stack-work\dist\5c8418a7\build\Action\Test.o )
+[28 of 28] Compiling Hoogle           ( src\Hoogle.hs, .stack-work\dist\5c8418a7\build\Hoogle.o )
+Preprocessing executable 'hoogle' for hoogle-5.0.14..
+Building executable 'hoogle' for hoogle-5.0.14..
+[1 of 1] Compiling Main             ( src\Main.hs, .stack-work\dist\5c8418a7\build\hoogle\hoogle-tmp\Main.o )
+Linking .stack-work\dist\5c8418a7\build\hoogle\hoogle.exe ...
+Installing library in C:\sr\snapshots\13cecb13\lib\x86_64-windows-ghc-8.2.2\hoogle-5.0.14-3IfzS02Md9g9rXYwfP7Mva
+Installing executable hoogle in C:\sr\snapshots\13cecb13\bin
+Registering library for hoogle-5.0.14..

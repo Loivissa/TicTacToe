@@ -1,0 +1,6 @@
+Configuring storable-tuple-0.0.3.3...
+Preprocessing library for storable-tuple-0.0.3.3..
+Building library for storable-tuple-0.0.3.3..
+[1 of 1] Compiling Foreign.Storable.Tuple ( src\Foreign\Storable\Tuple.hs, .stack-work\dist\5c8418a7\build\Foreign\Storable\Tuple.o )
+Installing library in C:\sr\snapshots\13cecb13\lib\x86_64-windows-ghc-8.2.2\storable-tuple-0.0.3.3-4sZ7o2xZTeIEfqh6MnvZAI
+Registering library for storable-tuple-0.0.3.3..

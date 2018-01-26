@@ -1,0 +1,6 @@
+Configuring mmap-0.5.9...
+Preprocessing library for mmap-0.5.9..
+Building library for mmap-0.5.9..
+[1 of 1] Compiling System.IO.MMap   ( System\IO\MMap.hs, .stack-work\dist\5c8418a7\build\System\IO\MMap.o )
+Installing library in C:\sr\snapshots\13cecb13\lib\x86_64-windows-ghc-8.2.2\mmap-0.5.9-AskA5vMKkrRI1GN3KT8XZJ
+Registering library for mmap-0.5.9..
