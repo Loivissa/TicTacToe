@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-01-25 22:37:03.1533211 UTC
+2018-01-26 10:28:52.8231636 UTC
 
-interface projekt-0.1.0.0-224PrvOZtnxCf3bB64O2Ck:Lib 8022
-  interface hash: d6d45d66bbdd521da1884d0738756398
-  ABI hash: 1ac473e0bfede4d1332b94df77b4d3d7
-  export-list hash: 094c54198c929c3bb0a3a99ec796f907
+interface projekt-0.1.0.0-L2R9sX9EbLN31CCNRW6qUq:Lib 8022
+  interface hash: 4c97fae635667d0367f7128408155041
+  ABI hash: 972b641762334aa262849433b15de354
+  export-list hash: 0dca3dae51fbb9fc8eda27c77d32474f
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 73bbfb07a2cc198332f47c5c19438df4
   sig of: Nothing
@@ -26,31 +26,31 @@ family instance modules: base-4.10.1.0:Control.Applicative
 import  -/  base-4.10.1.0:Prelude a93a9400cc0c816c2ee5f39399baa7a0
 import  -/  base-4.10.1.0:System.IO 1fb8f1d116df69c8750950ac088a90e6
 import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
-09535af1a2fcf903cddab46d374c314d
+b5d7722955ea77e41da4406bbf2a36bf
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module Lib.$trModule3 Lib.$trModule1) -}
-5f27adf77707cc312f28e59c80187b47
+9acdda9fe495391ec5a643b5722c9a79
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS Lib.$trModule2) -}
-0d6c801e188128ae74f04c765c2066d9
+ce005dc49d8869e9b0ce7ee78ab7a2f7
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Lib"#) -}
-51d67142f8a0322d36a1a65e145368a1
+924acdc6c19f2c47f462469de01d60c5
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS Lib.$trModule4) -}
-6bfc3711fd4a48a0e63e379fd583a6b6
+9cc7f8bf4b5aa85696ce1c8bfa1b8131
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("projekt-0.1.0.0-224PrvOZtnxCf3bB64O2Ck"#) -}
-2e18a070a11cfeb3ddcd8800e81ca565
+     Unfolding: ("projekt-0.1.0.0-L2R9sX9EbLN31CCNRW6qUq"#) -}
+07bbce6ac0e651b77427ef001ef642f6
   someFunc :: GHC.Types.IO ()
   {- Arity: 1,
      Unfolding: InlineRule (0, True, True)
                 Lib.someFunc1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-9128e6c9daf57d697e0d312eb5f151db
+cc563791155899553c2017777e2eae09
   someFunc1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -59,10 +59,10 @@ import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
                    GHC.IO.Handle.FD.stdout
                    Lib.someFunc2
                    GHC.Types.True) -}
-2c7eb2ef36c6fd205f925ceab378903d
+b3ef8e2b8c2a9c8c37d205dfed21c9c7
   someFunc2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# Lib.someFunc3) -}
-841ca11acc1576c36cf0251945cfeb05
+7aaa33e159190fe1ec869282f66c92fc
   someFunc3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("someFunc"#) -}
 vectorised variables:

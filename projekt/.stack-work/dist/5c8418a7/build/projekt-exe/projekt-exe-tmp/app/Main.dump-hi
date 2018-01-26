@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-01-25 22:37:06.6465382 UTC
+2018-01-26 10:28:55.5875969 UTC
 
 interface main:Main 8022
-  interface hash: 7a73b0713d4a5720ecef484f7fc2288d
-  ABI hash: 6f3796a1fd06c665ce84d5985686d7ac
-  export-list hash: fd4f49c16de8504eca6561d8de1457d3
+  interface hash: 2f2991747b6b9411604e8efd480aa732
+  ABI hash: a513ee90abb8e26cb58f6c416eb12d04
+  export-list hash: 200174c890b456c1fdfb5bf3d2d2ea40
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: e8273471fbb444640b213fe264470ef7
   sig of: Nothing
@@ -25,8 +25,8 @@ family instance modules: base-4.10.1.0:Control.Applicative
                          base-4.10.1.0:GHC.TypeNats
 import  -/  base-4.10.1.0:Prelude a93a9400cc0c816c2ee5f39399baa7a0
 import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
-import  -/  projekt-0.1.0.0:Lib 1ac473e0bfede4d1332b94df77b4d3d7
-import  -/  projekt-0.1.0.0:TicTacToeGame d16c3a3a8673b5c55decb4249ae78285
+import  -/  projekt-0.1.0.0:Lib 972b641762334aa262849433b15de354
+import  -/  projekt-0.1.0.0:TicTacToeGame 428a7e024c2931224d6bf947f965d6d2
 9d72b2fddb818bcd8919052935e0f1f3
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
@@ -45,12 +45,12 @@ e5875966b74dad2d29772660b8a75e33
 d026be77cb9ced20e35a61514e0458aa
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("main"#) -}
-1f31f77fa2527984576cd8c0cbdc6023
+a34fdf6b5930cf26fb09585a456e12d8
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 TicTacToeGame.playAGame1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-caf3bb524bec21fd9325f00e56ccb7b7
+fa9fae1d02c033be77f59c65716a3de0
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)

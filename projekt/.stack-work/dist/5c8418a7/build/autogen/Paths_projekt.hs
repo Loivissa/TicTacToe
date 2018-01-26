@@ -29,12 +29,12 @@ version :: Version
 version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
-bindir     = "D:\\WIEiT\\Funkcyjne\\TicTacToe\\projekt\\.stack-work\\install\\ccbce92a\\bin"
-libdir     = "D:\\WIEiT\\Funkcyjne\\TicTacToe\\projekt\\.stack-work\\install\\ccbce92a\\lib\\x86_64-windows-ghc-8.2.2\\projekt-0.1.0.0-224PrvOZtnxCf3bB64O2Ck"
-dynlibdir  = "D:\\WIEiT\\Funkcyjne\\TicTacToe\\projekt\\.stack-work\\install\\ccbce92a\\lib\\x86_64-windows-ghc-8.2.2"
-datadir    = "D:\\WIEiT\\Funkcyjne\\TicTacToe\\projekt\\.stack-work\\install\\ccbce92a\\share\\x86_64-windows-ghc-8.2.2\\projekt-0.1.0.0"
-libexecdir = "D:\\WIEiT\\Funkcyjne\\TicTacToe\\projekt\\.stack-work\\install\\ccbce92a\\libexec\\x86_64-windows-ghc-8.2.2\\projekt-0.1.0.0"
-sysconfdir = "D:\\WIEiT\\Funkcyjne\\TicTacToe\\projekt\\.stack-work\\install\\ccbce92a\\etc"
+bindir     = "D:\\WIEiT\\Funkcyjne\\TicTacToe\\.stack-work\\install\\ccbce92a\\bin"
+libdir     = "D:\\WIEiT\\Funkcyjne\\TicTacToe\\.stack-work\\install\\ccbce92a\\lib\\x86_64-windows-ghc-8.2.2\\projekt-0.1.0.0-L2R9sX9EbLN31CCNRW6qUq"
+dynlibdir  = "D:\\WIEiT\\Funkcyjne\\TicTacToe\\.stack-work\\install\\ccbce92a\\lib\\x86_64-windows-ghc-8.2.2"
+datadir    = "D:\\WIEiT\\Funkcyjne\\TicTacToe\\.stack-work\\install\\ccbce92a\\share\\x86_64-windows-ghc-8.2.2\\projekt-0.1.0.0"
+libexecdir = "D:\\WIEiT\\Funkcyjne\\TicTacToe\\.stack-work\\install\\ccbce92a\\libexec\\x86_64-windows-ghc-8.2.2\\projekt-0.1.0.0"
+sysconfdir = "D:\\WIEiT\\Funkcyjne\\TicTacToe\\.stack-work\\install\\ccbce92a\\etc"
 
 getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
 getBinDir = catchIO (getEnv "projekt_bindir") (\_ -> return bindir)
