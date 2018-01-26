@@ -17,10 +17,10 @@ main = do
             seeCirclesVictoryTest,
             tests
             ])
+    quickCheck inProgressTest
     if (errors counts + failures counts == 0)
         then exitSuccess
         else exitFailure
-	quickCheck inProgressTest
 
 
 convertingCrossTest :: Test
@@ -41,5 +41,13 @@ tests = TestList [ "test boasrdToString"   ~: ",,,,,,,\n| | | |\n| | | |\n| | | 
                  , "test oneDimIndexToTwoDim" ~: (1,1) ~=? oneDimIndexToTwoDim 4
                  ]
 
-inProgressTest :: Field -> Field -> Bool
-inProgressTest f1 f2 = (seeGameStatus(eliminate(lazilyDecideHowToMove(f1)(newBoard))) == seeGameStatus(eliminate(lazilyDecideHowToMove(f2)(newBoard))))
+fieldToBool :: Field -> Bool
+fieldToBool Circle = False
+fieldToBool _ = True
+
+boolToField:: Bool -> Field
+boolToField True = Cross
+boolToField False = Circle				 
+ 
+inProgressTest :: Bool -> Bool -> Bool
+inProgressTest b1 b2 = (seeGameStatus(eliminate(lazilyDecideHowToMove(boolToField(b1))(newBoard))) == seeGameStatus(eliminate(lazilyDecideHowToMove(boolToField(b2))(newBoard))))

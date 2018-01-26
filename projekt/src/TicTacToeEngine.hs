@@ -32,7 +32,6 @@ instance Eq GameStatus where
 -- | @Board@ represents the board for the Tic Tac Toe game. Starting board is represented by @newBoard@, which is an empty 3x3 Tic Tac Toe board. It's rows and columns are numbered from 0 to 2. Those numbers are used to specify where do you want to move. (See @makeAMove@ for the exact way to specify where do you want to place your mark)
 type Board = Array (Int,Int) Field
 
--- | @newBoard@ creates a new, empty @Board@ (See @Board@)
 newBoard = listArray ((0,0),(2,2)) [Empty, Empty, Empty, Empty, Empty, Empty, Empty, Empty, Empty]
 
 makeAMove _ Empty _ = Nothing

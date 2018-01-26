@@ -22,7 +22,7 @@ maybeChecker :: Maybe a -> Bool
 maybeChecker Nothing = False
 maybeChecker _ = True
 
--- | @checkOnList@ interprets list of fields and returns number of @Empty@ field in row. (See @Field@)
+-- | @checkOnList@ interprets list of fields and returns number of @Empty@ field in row. (@See @Field@)
 checkOnList :: Field -> [Field] -> Maybe Int
 checkOnList Cross (Empty:Cross:Cross:[]) = Just 0
 checkOnList Cross (Cross:Empty:Cross:[]) = Just 1
