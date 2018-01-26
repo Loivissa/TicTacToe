@@ -32,7 +32,6 @@ library
       base >=4.7 && <5
     , array
   exposed-modules:
-      Lib
       TicTacToeEngine
       TicTacToePlayer
       TicTacToeBoard

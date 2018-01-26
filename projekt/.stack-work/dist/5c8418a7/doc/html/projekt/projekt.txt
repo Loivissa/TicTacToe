@@ -7,9 +7,6 @@
 @package projekt
 @version 0.1.0.0
 
-module Lib
-someFunc :: IO ()
-
 module TicTacToeEngine
 
 -- | <tt>Board</tt> represents the board for the Tic Tac Toe game. Starting

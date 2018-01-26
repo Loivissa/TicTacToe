@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2018-01-26 10:28:55.5875969 UTC
+2018-01-26 11:05:29.8791376 UTC
 
 interface main:Main 8022
-  interface hash: 2f2991747b6b9411604e8efd480aa732
+  interface hash: 413cc6ec76f721fa84b6cfb4afad9506
   ABI hash: a513ee90abb8e26cb58f6c416eb12d04
   export-list hash: 200174c890b456c1fdfb5bf3d2d2ea40
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
@@ -25,7 +25,6 @@ family instance modules: base-4.10.1.0:Control.Applicative
                          base-4.10.1.0:GHC.TypeNats
 import  -/  base-4.10.1.0:Prelude a93a9400cc0c816c2ee5f39399baa7a0
 import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
-import  -/  projekt-0.1.0.0:Lib 972b641762334aa262849433b15de354
 import  -/  projekt-0.1.0.0:TicTacToeGame 428a7e024c2931224d6bf947f965d6d2
 9d72b2fddb818bcd8919052935e0f1f3
   $trModule :: GHC.Types.Module
