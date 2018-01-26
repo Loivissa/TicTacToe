@@ -38,6 +38,9 @@ InProgress :: GameStatus
 CrossWon :: GameStatus
 CircleWon :: GameStatus
 Stalemate :: GameStatus
+
+-- | <tt>newBoard</tt> creates a new, empty <tt>Board</tt> (See
+--   <tt>Board</tt>)
 newBoard :: Board
 
 -- | <tt>makeAMove</tt> returns <tt>Just Board</tt> after making a
